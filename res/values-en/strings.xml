@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="xcsdk_xczhifupingtai">Xiaocong Payment</string>
+    <string name="xcsdk_cmcc">CMSS</string>
+    <string name="xcsdk_pay_amount">Amount:</string>
+    <string name="xcsdk_rmb_200">200  RMB</string>
+    <string name="xcsdk_tip_input_mobile">Your mobile</string>
+    <string name="xcsdk_next_step">Next</string>
+    <string name="xcsdk_charge_sms_sent">The SMS has sent to you</string>
+    <string name="xcsdk_pay_as_sms">Please pay as the SMS</string>
+    <string name="xcsdk_tip_pay_finish">Click Finish to return</string>
+    <string name="xcsdk_finish_pay_btn">Finish</string>
+    <string name="xcsdk_credit_num">Your Credit</string>
+    <string name="xcsdk_tip_input_credit">Your Credit</string>
+    <string name="xcsdk_tip_input_credit_validcode">Expiry Date(input 0627 for 06/27)</string>
+    <string name="xcsdk_tip_input_credit_cvv2">CVV</string>
+    <string name="xcsdk_tip_input_credit_mobile">Your mobile registered in the Bank</string>
+    <string name="xcsdk_agree_charge">I agree on the contract</string>
+    <string name="xcsdk_contract_charge">Xiaocong Payment Contract</string>
+    <string name="xcsdk_close_btn">Close</string>
+    <string name="xiaocongxiyi_text">小葱充值服务协议\n
+小葱按照本协议的规定及其不时发布的操作规则提供基于互联网的点卡充值服务(以下称“充值服务”)，为获得充值服务，服务使用人(以下称“用户”)同意本协议的全部条款并按照页面上的提示完成全部的充值程序。用户在进行充值程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。用户在使用小葱提供的各项服务之前，应仔细阅读本服务协议，如用户不同意本充值用户协议及/或随时对其的修改，请停止使用小葱提供的服务。
+\n1、服务内容\n
+小葱的充值系统提供支付宝、IPS、易宝支付等不同的充值方式，涵盖了实物卡、银行卡、手机短信充值、声讯电话充值等充值操作办法。用户使用该平台进行充值，以增加相关网络游戏中用户帐号所有的虚拟货币的数量。
+\n2、风险提示\n
+\n2.1 在使用充值方式时，用户务必仔细确认自己的帐号并仔细选择相关操作选项。若因为用户自身输入帐号错误、操作不当或不了解充值计费方式等因素造成充错帐号、错选充值种类等情形而损害自身权益的，小葱将不会作任何补偿或赔偿。
+\n2.2 若用户以非法的方式，或使用非小葱所指定的充值方式进行充值，小葱不保证该充值顺利或者正确完成。若因此造成用户权益受损时，小葱不会作任何补偿或赔偿，小葱同时保留随时终止该用户游戏帐号资格及使用各项充值服务的权利。
+\n3、充值成功后\n
+充值成功后，充值所增加的账号内虚拟货币可由用户自由使用，但小葱不会提供任何退还或逆向兑换服务。充值卡（如神州行充值卡）充值后若有任何剩余点数，用户可通过充值卡的客服专线查询处理，但不得要求小葱退费会兑现。
+\n4、渠道商服务手续费用\n
+各充值方式对应的渠道商可能会按其标准制定相关充值渠道手续费用（可能会在充值操作页面或渠道商其他页面上提示），并在用户充值时收取。小葱特此提醒：请用户务必注意各充值方式的渠道商服务手续费，并按自己的需求选取充值方式。
+\n5、若因小葱充值方式原因造成用户充值失实并经查证属实的，小葱将根据用户充值情况作出变动措施
+\n5.1 因充值方式原因，造成系统充值额小于用户实际充值额的，小葱予以补其差额；
+\n5.2 因充值方式原因，造成系统充值额大于用户实际充值额的，小葱有权追回差额；
+\n5.3 因渠道商收取服务手续费用等原因造成系统充值额小于用户实际充值额的，不属于用户充值失实。
+\n
+\n6. 免责声明和损害赔偿
+\n6.1 小葱充值平台不保证以下事宜：
+\n(a) 本服务将符合您的要求
+\n(b) 本服务将不受干扰、及时提供、安全可靠或不会出错。</string>
+    <string name="getordernum_failed">Failed to generate the order</string>
+    <string name="push_ordernum">Submitting&#8230;</string>
+    <string name="waiting_min">Sorry, not available</string>
+    <string name="notice_relphone">Invalid mobile</string>
+    <string name="notice_nullphone">The mobile is required</string>
+    <string name="notice_xiyigree">You must agree on the contract.</string>
+    <string name="notice_cardphone">Invalid mobile</string>
+    <string name="notice_card_cvv2">Invalid CVV2</string>
+    <string name="notice_card_cvv2null">CVV2 is required</string>
+    <string name="notice_card_vakdity">Invalid Expiry Date</string>
+    <string name="notice_card_vakditynull">Invalid Expiry Date</string>
+    <string name="notice_cardwrong">Invalid card number</string>
+    <string name="notice_cardnull">Invalid card number</string>
+    <string name="notice_toalipay">Sending&#8230;</string>
+    <string name="xcsdk_tip">Tip</string>
+    <string name="xcsdk_confirm">OK</string>
+    <string name="xcsdk_cancel">Cancel</string>
+    <string name="order_push_suc">Successful!</string>
+    <string name="order_push_fail">Failed</string>
+    <string name="notice_sumitcancel_controul">Are you sure to cancel?</string>
+    <string name="xcsdk_pay_result">Result</string>
+    <string name="xcsdk_success">Successful</string>
+    <string name="xcsdk_fail">Failed</string>
+    <string name="xcsdk_order_null">The order has error(null).</string>
+    <string name="notice_loading">Sending&#8230;</string>
+    <string name="jiancepay">Checking the version</string>
+    <string name="confirm_install_hint">Setup</string>
+    <string name="confirm_install">Install the alipay service please.</string>
+    <string name="gamepayxc_info">The order is not complete</string>
+    <string name="gamepayxc_info2">The order has error</string>
+    <string name="order_createfail_null">Failed to generate the order(null)</string>
+    <string name="order_createfail">Failed to generate the order</string>
+    <string name="cancel_buythis">re you sure to cancel?</string>
+    <string name="confirm_xc">tip</string>
+
+</resources>

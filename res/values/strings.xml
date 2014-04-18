@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="xczhifupingtai">"小葱支付平台"</string>
+    <string name="xcsdk_xczhifupingtai">小葱支付平台</string>
     <string name="xcsdk_cmcc">中国移动</string>
     <string name="xcsdk_pay_amount">支付金额：</string>
     <string name="xcsdk_rmb_200">200  RMB</string>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 注册 -->
+    <string name="xcsdk_register_title">Xiaocong sign up</string>
+    <string name="xcsdk_register_username">Mobile</string>
+    <string name="xcsdk_register_send_code">Send the code</string>
+    <string name="xcsdk_register_code">Input the code you received</string>
+    <string name="xcsdk_register_password">Password</string>
+    <string name="xcsdk_register_password_confirm">Password(confirm)</string>
+    <string name="xcsdk_register_submit">Submit</string>
+    <string name="xcsdk_register_code_sent">Done!</string>
+    <string name="xcsdk_register_send_code_again">Send again</string>
+    <string name="xcsdk_register_cancel">Cancel</string>
+    <string name="xcsdk_register_password_tip">The length of password must between 6 and 16.</string>
+    <string name="xcsdk_send_code_error">Failed to send the code</string>
+    <string name="xcsdk_registering">Working&#8230;</string>
+    <string name="xcsdk_register_success">Success!</string>
+    <string name="xcsdk_register_fail">Fail!</string>
+
+    <!-- 登录 -->
+    <string name="xcsdk_login_title">Xiaocong Sign in</string>
+    <string name="xcsdk_login_username">Username</string>
+    <string name="xcsdk_login_password">Password</string>
+    <string name="xcsdk_login_btn">Sign in</string>
+    <string name="xcsdk_login_logining">Signing in&#8230;</string>
+    <string name="xcsdk_login_error">Failed! Network/Service failure!</string>
+    <string name="xcsdk_login_fail">Illegal username/password!</string>
+    
+    <!-- 广告 -->
+    <string name="xcsdk_splash_title">RECOMMENDATION</string>
+    <string name="xcsdk_click_view">View</string>
+    <string name="xcsdk_click_download">Download</string>
+    <string name="xcsdk_downloading">Download&#8230;</string>
+    <string name="xcsdk_download_game_async">Downloading started!</string>
+    
+    <string name="xcsdk_download_game_bad_data">Sorry! But the service is unavailable.</string>
+    <string name="xcsdk_download_game_fail">Failed to download the game!</string>
+    
+    <string name="xcsdk_btn_ok">OK</string>
+    <string name="xcsdk_btn_confirm">OK</string>
+    
+    <string name="xcsdk_title_error">Error</string>
+
+</resources>

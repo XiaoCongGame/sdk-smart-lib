@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">XcSdkSecurity</string>
-
     <!-- 注册 -->
     <string name="xcsdk_register_title">小葱用户注册</string>
     <string name="xcsdk_register_username">手机号</string>
