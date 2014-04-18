@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pp_BackgroundScrollViewStyle" >
+
+    <LinearLayout style="@style/pp_LinearLayoutStyle" >
+
+        <include
+            android:id="@+id/pp_headLayout"
+            layout="@layout/pp_head" />
+
+        <WebView
+            android:id="@+id/pp_webview_agreement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

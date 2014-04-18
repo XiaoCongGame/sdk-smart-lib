@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pp_BackgroundScrollViewStyle" >
+
+    <LinearLayout style="@style/pp_LinearLayoutStyle" >
+
+        <RelativeLayout style="@style/pp_OutmostLinearLayoutStyle" >
+
+            <include
+                android:id="@+id/pp_headLayout"
+                layout="@layout/pp_head" />
+
+            <TextView
+                android:id="@+id/pp_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_headLayout"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="@string/pp_input_number"
+                android:textColor="@color/pp_introduce"
+                android:textSize="16sp" />
+
+            <!-- 短信验证码 -->
+
+            <EditText
+                android:id="@+id/pp_ed_user_message_authCode"
+                style="@style/pp_InputEditTextStyle"
+                android:layout_below="@id/pp_phone"
+                android:layout_marginTop="20dp"
+                android:digits="0123456789"
+                android:background="@drawable/pp_input"
+                android:hint="@string/pp_please_enter_message_code"
+                android:paddingLeft="10dip"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Button
+                android:id="@+id/pp_confirm"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_ed_user_message_authCode"
+                android:layout_marginTop="20dp"
+                android:text="完成支付"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/pp_sLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_confirm"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pp_not_code"
+                    android:textColor="@color/pp_not_code"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/pp_bt_user_message_getAuthCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pp_btn_login"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/pp_get_authcode_again"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/pp_bottomLayout"
+            android:layout_marginTop="10dp"
+            layout="@layout/pp_bottom" />
+    </LinearLayout>
+
+</ScrollView>

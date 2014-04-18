@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/xc_btn_enter_press_default" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/xc_btn_enter_focus" android:state_focused="true"></item>
+    <item android:drawable="@drawable/xc_btn_enter_focus" android:state_hovered="true"></item>
+    <item android:drawable="@drawable/xc_btn_enter_default" ></item>
+
+</selector>

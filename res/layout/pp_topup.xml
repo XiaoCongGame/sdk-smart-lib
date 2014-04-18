@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pp_BackgroundScrollViewStyle" >
+
+    <LinearLayout style="@style/pp_LinearLayoutStyle" >
+
+        <RelativeLayout style="@style/pp_OutmostLinearLayoutStyle" >
+
+            <include
+                android:id="@+id/pp_headLayout"
+                layout="@layout/pp_head" />
+
+            <!-- 商品信息 -->
+
+            <include
+                android:id="@+id/pp_orderLayout"
+                style="@style/pp_WhiteLayoutStyle"
+                android:layout_below="@+id/pp_headLayout"
+                layout="@layout/pp_order"
+                android:background="@drawable/pp_order_up" />
+
+            <TextView
+                android:id="@+id/pp_topup_hints"
+                style="@style/pp_WhiteLayoutStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/pp_orderLayout"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginTop="0.0dip"
+                android:background="@drawable/pp_hints"
+                android:drawableLeft="@drawable/pp_tanhao"
+                android:drawablePadding="5dip"
+                android:padding="5.0dip"
+                android:text="您当前欠款1000.00P币（1P币=1元）信用余额不足，请付款完成此次购买。"
+                android:textColor="@color/pp_introduce"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/pp_confirm"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_topup_hints"
+                android:text="支付**元" />
+
+            <LinearLayout
+                android:id="@+id/pp_iv_refund"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_confirm"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/pp_line"
+                    android:contentDescription="line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:text="或"
+                    android:textColor="@color/pp_phone"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/pp_line"
+                    android:contentDescription="line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pp_bt_refund"
+                android:layout_marginTop="20dp"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_iv_refund" />
+
+            <TextView
+                android:id="@+id/pp_help"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/pp_bt_refund"
+                android:layout_marginBottom="5.0dip"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/pp_bottomLayout"
+            layout="@layout/pp_bottom" />
+    </LinearLayout>
+
+</ScrollView>

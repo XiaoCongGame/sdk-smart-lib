@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pp_BackgroundScrollViewStyle" >
+
+    <LinearLayout style="@style/pp_LinearLayoutStyle" >
+
+        <RelativeLayout style="@style/pp_OutmostLinearLayoutStyle" >
+
+            <!-- title -->
+
+            <include
+                android:id="@+id/pp_headLayout"
+                layout="@layout/pp_head" />
+
+            <include
+                android:id="@+id/pp_orderLayout"
+                style="@style/pp_WhiteLayoutStyle"
+                android:layout_below="@id/pp_headLayout"
+                layout="@layout/pp_order" />
+
+            <Button
+                android:id="@+id/pp_confirm"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_orderLayout"
+                android:layout_marginTop="20.0dip"
+                android:text="@string/pp_return_tenant" />
+
+            <TextView
+                android:id="@+id/pp_tv_debt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_confirm"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/pp_order_message" />
+
+            <Button
+                android:id="@+id/pp_bt_refund"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_tv_debt_message"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/pp_btn_repayment"
+                android:text="立即还款" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/pp_bottomLayout"
+            layout="@layout/pp_bottom" />
+    </LinearLayout>
+
+</ScrollView>

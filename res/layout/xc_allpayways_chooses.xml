@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xc_banner" >
+
+    <TextView
+        android:id="@+id/toptile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/xc_banner"
+        android:gravity="center"
+        android:text="@string/xczhifupingtai"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:id="@+id/grid_father"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toptile"
+        android:background="@drawable/pay_background" >
+
+        <GridView
+            android:id="@+id/payways_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:numColumns="4"
+            android:scrollbars="none" >
+        </GridView>
+    </RelativeLayout>
+
+    <!-- CMCC -->
+    <include layout="@layout/xc_pay_cmcc_inside" />
+
+    <!-- yeepay -->
+    <include layout="@layout/xc_pay_yeexc_pay_inside" />
+
+</RelativeLayout>

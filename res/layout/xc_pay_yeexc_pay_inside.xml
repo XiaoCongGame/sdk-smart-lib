@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yeepay_layout_father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignTop="@+id/grid_father"
+    android:visibility="gone" >
+
+    <!-- yeepay -->
+
+    <RelativeLayout
+        android:id="@+id/yeepay_chossemoney"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/yeepaymoney_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yeepaypay_numtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xcsdk_pay_amount"
+                android:textColor="@color/xcsdk_gray"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/yeepaymoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xcsdk_rmb_200"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yeepaymoney_layout_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yeepaymoney_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/yeepaypay_cardnumtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xcsdk_credit_num"
+                android:textColor="@color/xcsdk_gray"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/yeepaymoney_cardtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yeepaymoney_layout_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/xc_btn_card_edittext"
+            android:focusable="true"
+            android:hint="@string/xcsdk_tip_input_credit"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/get_more_card"
+            android:layout_width="45dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@id/autoCompleteTextView1"
+            android:layout_alignRight="@id/autoCompleteTextView1"
+            android:layout_alignTop="@id/autoCompleteTextView1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/xc_btn_dropdown_default" />
+
+        <RelativeLayout
+            android:id="@+id/card_xc_info_cvv2layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/autoCompleteTextView1"
+            android:layout_alignRight="@id/autoCompleteTextView1"
+            android:layout_below="@id/yeepaymoney_layout_card"
+            android:visibility="invisible" >
+
+            <EditText
+                android:id="@+id/valdity_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xc_btn_card_edittext"
+                android:hint="@string/xcsdk_tip_input_credit_validcode"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/ccv2_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/valdity_edit"
+                android:layout_below="@id/valdity_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xc_btn_card_edittext"
+                android:hint="@string/xcsdk_tip_input_credit_cvv2"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/card_phone_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ccv2_edit"
+                android:layout_below="@id/ccv2_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xc_btn_card_edittext"
+                android:hint="@string/xcsdk_tip_input_credit_mobile"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/yeepay_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_xc_info_cvv2layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/xc_btn_enter"
+            android:text="@string/xcsdk_next_step"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yeepay_steps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/xieyi_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xc_checkbox_bg"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/xieyi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/thiscard_show"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignLeft="@id/autoCompleteTextView1"
+            android:layout_alignRight="@id/autoCompleteTextView1"
+            android:layout_below="@id/autoCompleteTextView1"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/menu_background"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_light">#FFCCCCCC</color>
+    <color name="xcsdk_splash_bg">#AA05081b</color>
+    <color name="xcsdk_activity_bg">#eee</color>
+    <color name="xcsdk_valid_field">#553eff58</color>
+    <color name="xcsdk_invalid_field">#55ff7c8e</color>
+    <color name="xcsdk_btn_bg">#64b7b3</color>
+    <color name="xcsdk_btn_bg_focus">#d26433</color>
+    <color name="xcsdk_btn_bg_press">#7accc8</color>
+    <color name="xcsdk_btn_bg_disabled">#88232d3b</color>
+
+</resources>

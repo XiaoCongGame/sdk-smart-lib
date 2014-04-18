@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="xczhifupingtai">"小葱支付平台"</string>
+    <string name="xcsdk_cmcc">中国移动</string>
+    <string name="xcsdk_pay_amount">支付金额：</string>
+    <string name="xcsdk_rmb_200">200  RMB</string>
+    <string name="xcsdk_tip_input_mobile">请输入支付手机号</string>
+    <string name="xcsdk_next_step">下一步</string>
+    <string name="xcsdk_charge_sms_sent">充值短信已经发至您的手机</string>
+    <string name="xcsdk_pay_as_sms">请按照短信流程完成支付</string>
+    <string name="xcsdk_tip_pay_finish">完成支付请点击支付完成回到游戏，2分钟延迟</string>
+    <string name="xcsdk_finish_pay_btn">支付完成</string>
+    <string name="xcsdk_credit_num">信用卡号：</string>
+    <string name="xcsdk_tip_input_credit">请输入信用卡卡号</string>
+    <string name="xcsdk_tip_input_credit_validcode">请输入有效期，如06／27请输入0627</string>
+    <string name="xcsdk_tip_input_credit_cvv2">请输入CVV2,签名栏后三位</string>
+    <string name="xcsdk_tip_input_credit_mobile">请输入信用卡预留手机号</string>
+    <string name="xcsdk_agree_charge">同意《充值协议》</string>
+    <string name="xcsdk_contract_charge">小葱充值协议</string>
+    <string name="xcsdk_close_btn">关闭</string>
+    <string name="xiaocongxiyi_text">小葱充值服务协议\n
+小葱按照本协议的规定及其不时发布的操作规则提供基于互联网的点卡充值服务(以下称“充值服务”)，为获得充值服务，服务使用人(以下称“用户”)同意本协议的全部条款并按照页面上的提示完成全部的充值程序。用户在进行充值程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。用户在使用小葱提供的各项服务之前，应仔细阅读本服务协议，如用户不同意本充值用户协议及/或随时对其的修改，请停止使用小葱提供的服务。
+\n1、服务内容\n
+小葱的充值系统提供支付宝、IPS、易宝支付等不同的充值方式，涵盖了实物卡、银行卡、手机短信充值、声讯电话充值等充值操作办法。用户使用该平台进行充值，以增加相关网络游戏中用户帐号所有的虚拟货币的数量。
+\n2、风险提示\n
+\n2.1 在使用充值方式时，用户务必仔细确认自己的帐号并仔细选择相关操作选项。若因为用户自身输入帐号错误、操作不当或不了解充值计费方式等因素造成充错帐号、错选充值种类等情形而损害自身权益的，小葱将不会作任何补偿或赔偿。
+\n2.2 若用户以非法的方式，或使用非小葱所指定的充值方式进行充值，小葱不保证该充值顺利或者正确完成。若因此造成用户权益受损时，小葱不会作任何补偿或赔偿，小葱同时保留随时终止该用户游戏帐号资格及使用各项充值服务的权利。
+\n3、充值成功后\n
+充值成功后，充值所增加的账号内虚拟货币可由用户自由使用，但小葱不会提供任何退还或逆向兑换服务。充值卡（如神州行充值卡）充值后若有任何剩余点数，用户可通过充值卡的客服专线查询处理，但不得要求小葱退费会兑现。
+\n4、渠道商服务手续费用\n
+各充值方式对应的渠道商可能会按其标准制定相关充值渠道手续费用（可能会在充值操作页面或渠道商其他页面上提示），并在用户充值时收取。小葱特此提醒：请用户务必注意各充值方式的渠道商服务手续费，并按自己的需求选取充值方式。
+\n5、若因小葱充值方式原因造成用户充值失实并经查证属实的，小葱将根据用户充值情况作出变动措施
+\n5.1 因充值方式原因，造成系统充值额小于用户实际充值额的，小葱予以补其差额；
+\n5.2 因充值方式原因，造成系统充值额大于用户实际充值额的，小葱有权追回差额；
+\n5.3 因渠道商收取服务手续费用等原因造成系统充值额小于用户实际充值额的，不属于用户充值失实。
+\n
+\n6. 免责声明和损害赔偿
+\n6.1 小葱充值平台不保证以下事宜：
+\n(a) 本服务将符合您的要求
+\n(b) 本服务将不受干扰、及时提供、安全可靠或不会出错。</string>
+    <string name="getordernum_failed">未能获取订单号</string>
+    <string name="push_ordernum">订单提交中&#8230;</string>
+    <string name="waiting_min">暂未开通,敬请期待</string>
+    <string name="notice_relphone">请输入正确的移动号码</string>
+    <string name="notice_nullphone">手机号码不能为空</string>
+    <string name="notice_xiyigree">请勾选充值协议</string>
+    <string name="notice_cardphone">请输入正确的手机号</string>
+    <string name="notice_card_cvv2">CVV2码有误</string>
+    <string name="notice_card_cvv2null">CVV2码不能为空</string>
+    <string name="notice_card_vakdity">有效期有误</string>
+    <string name="notice_card_vakditynull">有效期不能为空</string>
+    <string name="notice_cardwrong">卡号输入有误</string>
+    <string name="notice_cardnull">卡号不能为空</string>
+    <string name="notice_toalipay">跳转支付宝中&#8230;</string>
+    <string name="xcsdk_tip">提示</string>
+    <string name="xcsdk_confirm">确定</string>
+    <string name="xcsdk_cancel">取消</string>
+    <string name="order_push_suc">订单提交成功</string>
+    <string name="order_push_fail">订单提交失败</string>
+    <string name="notice_sumitcancel_controul">操作尚未完成，确定放弃？</string>
+    <string name="xcsdk_pay_result">支付结果</string>
+    <string name="xcsdk_success">成功</string>
+    <string name="xcsdk_fail">失败</string>
+    <string name="xcsdk_order_null">定单为空</string>
+    <string name="notice_loading">数据处理&#8230;</string>
+    <string name="jiancepay">正在检测安全支付服务版本</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="gamepayxc_info">购买信息不完整</string>
+    <string name="gamepayxc_info2">购买信息有误</string>
+    <string name="order_createfail_null">订单生成失败,服务返回订单信息空</string>
+    <string name="order_createfail">订单生成失败</string>
+    <string name="cancel_buythis">取消此次购买吗？</string>
+    <string name="confirm_xc">小葱提示</string>
+
+</resources>

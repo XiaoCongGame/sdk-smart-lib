@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- focused -->
+    <item android:drawable="@drawable/xc_choose_light_default" android:state_selected="true" android:state_focused="false"/>
+     <!-- focused -->
+    <item android:drawable="@drawable/xc_choose_light_focus" android:state_selected="true" android:state_focused="true"/>
+      <!-- focused -->
+    <item android:drawable="@drawable/xc_choose_dark_focus" android:state_selected="false" android:state_focused="true"/>
+    <!-- default -->
+    <item android:drawable="@drawable/xc_choose_dark_default"/>
+</selector>

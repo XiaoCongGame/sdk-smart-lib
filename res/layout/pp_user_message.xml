@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/pp_BackgroundScrollViewStyle" >
+
+    <LinearLayout style="@style/pp_LinearLayoutStyle" >
+
+        <RelativeLayout style="@style/pp_OutmostLinearLayoutStyle" >
+
+            <include
+                android:id="@+id/pp_headLayout"
+                layout="@layout/pp_head" />
+
+            <!-- 商品金额 -->
+
+            <RelativeLayout
+                android:id="@+id/pp_amt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_headLayout"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/pp_order_message"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/zhifujine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/pp_not_code"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="支付金额：" />
+
+                <TextView
+                    android:id="@+id/pp_payAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifujine"
+                    android:text="30元"
+                    android:textColor="@color/pp_money_red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pp_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_amt"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/pp_order_message"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/pp_ed_user_message_bankcard_card_number"
+                    style="@style/pp_InputEditTextStyle"
+                    android:digits="0123456789"
+                    android:hint="@string/pp_bankcard_number_input"
+                    android:inputType="number"
+                    android:maxLength="19" />
+
+                <ImageView
+                    android:id="@+id/one_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pp_ed_user_message_bankcard_card_number"
+                    android:background="@drawable/pp_line" >
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/pp_ed_user_message_IDnumber"
+                    style="@style/pp_InputEditTextStyle"
+                    android:layout_below="@id/one_line"
+                    android:layout_marginTop="0dp"
+                    android:digits="0123456789*xX"
+                    android:hint="@string/pp_hint_id_number_input"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="18" />
+
+                <ImageView
+                    android:id="@+id/one_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pp_ed_user_message_IDnumber"
+                    android:background="@drawable/pp_line" >
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/pp_ed_user_message_realName"
+                    style="@style/pp_InputEditTextStyle"
+                    android:layout_below="@id/one_two"
+                    android:hint="@string/pp_real_name_input"
+                    android:inputType="textPersonName"
+                    android:maxLength="4" />
+
+                <ImageView
+                    android:id="@+id/one_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pp_ed_user_message_realName"
+                    android:background="@drawable/pp_line" >
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/pp_ed_user_message_phone_number"
+                    style="@style/pp_InputEditTextStyle"
+                    android:layout_below="@id/one_three"
+                    android:digits="0123456789"
+                    android:hint="@string/pp_phone_input"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pp_ll_authcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pp_message"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/pp_ed_user_message_authCode"
+                    style="@style/pp_InputEditTextStyle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/pp_input"
+                    android:digits="0123456789"
+                    android:paddingLeft="15.0dip"
+                    android:hint="@string/pp_please_enter_message_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@null" />
+
+                <Button
+                    android:id="@+id/pp_bt_user_message_getAuthCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/pp_btn_login"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textColor="@android:color/white"
+                    android:text="@string/pp_bt_get_authcode" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pp_layout_agreement"
+                style="@style/pp_InputLayoutStyle"
+                android:layout_below="@id/pp_ll_authcode"
+                android:layout_marginLeft="8.0dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dip" >
+
+                <CheckBox
+                    android:id="@+id/pp_cb_bankcard_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/pp_read_agree"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pp_tv_bankcard_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/pp_bankcard_agreement"
+                    android:textColor="#449eff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pp_confirm"
+                style="@style/pp_ConfirmButtonStyle"
+                android:layout_below="@id/pp_layout_agreement"
+                android:layout_marginTop="16dp"
+                android:text="@string/pp_next"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/pp_bottomLayout"
+            layout="@layout/pp_bottom" />
+    </LinearLayout>
+
+</ScrollView>

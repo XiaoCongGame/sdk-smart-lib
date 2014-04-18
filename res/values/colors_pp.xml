@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pp_title_bg">#F4A93E</color>
+    <color name="pp_introduce">#999999</color>
+    <color name="pp_not_code">#666666</color>
+    <color name="pp_phone">#333333</color>
+    <color name="pp_weihao_red">#EF5145</color>
+    <color name="pp_money_red">#ED5044</color>
+
+</resources>
