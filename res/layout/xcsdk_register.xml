@@ -78,7 +78,7 @@
         android:id="@+id/xcsdk_register_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/xcsdk_btn_bg"
+        android:background="#295c70"
         android:gravity="center"
         android:paddingBottom="20dp"
         android:paddingTop="20dp"

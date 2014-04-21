@@ -12,7 +12,7 @@
     <string name="xcsdk_register_code_sent">Done!</string>
     <string name="xcsdk_register_send_code_again">Send again</string>
     <string name="xcsdk_register_cancel">Cancel</string>
-    <string name="xcsdk_register_password_tip">The length of password must between 6 and 16.</string>
+    <string name="xcsdk_register_password_tip">6 ~ 16 characters</string>
     <string name="xcsdk_send_code_error">Failed to send the code</string>
     <string name="xcsdk_registering">Working&#8230;</string>
     <string name="xcsdk_register_success">Success!</string>
