@@ -5,6 +5,7 @@
 Users could register a new Xiaocong account by SDK.
 
 The flow:
+
 1. Users must provide with their mobile number. The mobile must have **11 digtals**.
 1. A code will be sent to user's mobile. **One minute later**, users could trigger sending again.
 1. Fill in the code to verify the mobile.

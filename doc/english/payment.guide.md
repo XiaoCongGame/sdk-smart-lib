@@ -98,5 +98,27 @@ The HTTP response for this request url should be a simple text:
 - `fail`: any exceptions
 - `sign_fail`: for invalid signature
 
+## Query orders
 
+You could query the status of an order from our server:
+```
+http://data.xiaocong.tv/queryOrderInfo.action?orderNo=2013041510251288&version=2&sign=b4600ae75b27f5fe1fb213f6e6d9620a
+```
+
+Http query parameters:
+- `orderNo` [String]：The order number in your system, which is identical with the parameter `orderNo` of `XcPayUtils.pay`.
+- `version` [int]：Always be `2`。
+- `sign` [String]：The signature, which is identical with the parameter `signature` of `XcPayUtils.pay`.
+
+The reponse is plain text, like `Code~Message`. For example, for successful payment, the response is `200~Success`.
+
+The full list of response text:
+- `200~Success`: success
+- `512~Order payment failure`: payment failure
+- `210~Order processing`: processing
+- `509~Order not exists`: the order isn't existed
+- `400~Version number error`: invalid `version`
+- `400~Order number is request`: `orderNo` is missing
+- `400~Sign is request`: `sign` is missing
+- `401~Sign verification failed`: invalid `sign`
 
