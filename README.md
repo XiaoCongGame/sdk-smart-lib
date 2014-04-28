@@ -6,6 +6,10 @@ This is the Xiaocong SDK.
 * Xiaocong User/Account system service.
 * Xiaocong Payment SDK.
 
+> Tip
+* Our SDK is designed for TVs, which have higher resolution than mobile phones. We expect the resolution 1280px * 960px at least.
+* Almost all android TVs in the market carry Android 4.0+. So we need `minSdkVersion > 14` .
+
 ## Quick Start
 
 We provide you with an Eclipse Android Library Project. Add this project as your project's dependency project.
