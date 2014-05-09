@@ -41,37 +41,63 @@ Users could choose other payment providers: [Alipay](https://www.alipay.com/) or
 The enter point of payment service is `tv.xiaocong.sdk.demo.XcPayUtils.pay`:
 
 ```java
-/**
- * Execute payment.
- *
- * @param context
- *            an {@link Context} instance
- * @param partnerId
- * @param amount
- *            the paying amount
- * @param signType
- *            md5 or RSA
- * @param orderNo
- *            the order number in your system
- * @param pkgname
- *            the package name of you Application
- * @param goodsDes
- *            some descriptions about your goods
- * @param signature
- * @param notifyUrl
- *            the callback URL
- * @param remark
- */
-public static void pay(Context context, String partnerId,
-	String amount, String signType,
-	String orderNo, String pkgname, String goodsDes,
-	String signature, String notifyUrl,
-    String remark, String accessToken)
+    /**
+     * Execute payment.
+     * 
+     * @param caller
+     *            caller that starts {@link PaymentStartActivity}.
+     * @param partnerId
+     * @param amount
+     *            the paying amount
+     * @param signType
+     *            md5 or RSA
+     * @param orderNo
+     *            the order number in your system
+     * @param pkgname
+     *            the package name of you Application
+     * @param goodsDes
+     *            some descriptions about your goods
+     * @param signature
+     * @param notifyUrl
+     *            the callback URL
+     * @param remark
+     */
+    public static void pay(Activity caller, int partnerId, int amount, String signType,
+            String orderNo, String pkgname, String goodsDes, String signature, String notifyUrl,
+            String remark, String accessToken) {
+        PaymentStartActivity.startMe(caller, partnerId, amount, signType, orderNo, pkgname,
+                goodsDes, signature, notifyUrl, remark, accessToken);
+    }
 ```
+
+
+The `caller` is an Activity in your app which starts payment. After calling `pay` above, our activity `PaymentStartActivity` will show up, in which users do payments. When payments flows finish in our sdk, then screen return to your activity `caller`. And you could be notified the result by using `onActivityResult`.
+
+```java
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	if (requestCode == PaymentStartActivity.REQUEST_CODE_START_PAY) {
+		Toast.makeText(this, "Result: " + resultCode, Toast.LENGTH_LONG).show();
+	}
+}
+```
+
+All possible `resultCode`s are defined in `com.xiaocong.sdk.PaymentResults`.
+
+- `ILLEGAL_PARAMETER`: Your request(ie. calling `pay`) is invalid.
+- `NO_PAY_WAY`: No payment providers available. If you come with this error, there may be a business/contract problem, and you may send an email to ask if pay ways are open to you.
+- `PAYRESULT_OK`: Payment successful.
+- `PAYRESULT_FAIL`: Payment failed definitely.
+- `CANCEL_BUY`: Users cancel the payemnt explicitly.
+- `CREATE_ORDER_FAIL`: Your order number has existed in our system. This may be a bug from you.
+- `AsyncTask_result` and *all other codes*: The result is pending or not resolved yet, you should query the order from our server to get the final result.
+
 
 The parameter `notifyUrl` is the callback url on your server, wich we will call it after we finish the process. See beblow.
 
-The `remark` could be arbitrary message. We'll sent it back to you with `notifyUrl`
+The `remark` could be arbitrary message. We'll sent it back to you with `notifyUrl`.
+
+
 
 ## Notify your server
 
