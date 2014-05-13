@@ -36,6 +36,10 @@ Before you code your payment service, refer to `tv.xiaocong.sdk.demo.PayActivity
 
 Users could choose other payment providers: [Alipay](https://www.alipay.com/) or [Yeepay](https://www.yeepay.com/). They could purchase items by RMB directly. For these payment, user don't need to sign in using their Xiaocong Account first - All they need is their accounts in Alipay or YeePay.
 
+The following is the entrance of different payment providers.
+
+![](payways.png)
+
 ## `tv.xiaocong.sdk.demo.XcPayUtils`
 
 The enter point of payment service is `tv.xiaocong.sdk.demo.XcPayUtils.pay`:
