@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
 
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:antialias="true"
-    android:src="@drawable/xcsdk_black_bg"
-    android:tileMode="repeat" >
-
-</bitmap>
+    <gradient
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:angle="270"
+        android:endColor="#BBB"
+        android:centerColor="#111"
+        android:startColor="#000" />
+</shape>

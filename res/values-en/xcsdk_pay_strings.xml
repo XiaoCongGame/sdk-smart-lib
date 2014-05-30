@@ -12,7 +12,7 @@
     <string name="xcsdk_finish_pay_btn">Finish</string>
     <string name="xcsdk_credit_num">Your Credit</string>
     <string name="xcsdk_tip_input_credit">Your Credit</string>
-    <string name="xcsdk_tip_input_credit_validcode">Expiry Date(input 0627 for 06/27)</string>
+    <string name="xcsdk_tip_input_credit_validcode">Expiry Date(eg. 0627)</string>
     <string name="xcsdk_tip_input_credit_cvv2">CVV</string>
     <string name="xcsdk_tip_input_credit_mobile">Your mobile registered in the Bank</string>
     <string name="xcsdk_agree_charge">I agree on the contract</string>
@@ -46,7 +46,6 @@
     <string name="notice_xiyigree">You must agree on the contract.</string>
     <string name="notice_cardphone">Invalid mobile</string>
     <string name="notice_card_cvv2">Invalid CVV2</string>
-    <string name="notice_card_cvv2null">CVV2 is required</string>
     <string name="notice_card_vakdity">Invalid Expiry Date</string>
     <string name="notice_card_vakditynull">Invalid Expiry Date</string>
     <string name="notice_cardwrong">Invalid card number</string>
@@ -72,5 +71,25 @@
     <string name="order_createfail">Failed to generate the order</string>
     <string name="cancel_buythis">re you sure to cancel?</string>
     <string name="confirm_xc">tip</string>
+    <string name="xcsdk_progress">Loading&#8230;</string>
+    <string name="xcsdk_new_credit_card">New Credit Card</string>
+    <string name="xcsdk_pay_amount_show">Paying amount：￥%1$s RMB</string>
+    <string name="xcsdk_pay_with_this">Pay with this card</string>
+    <string name="xcsdk_remove_creditcard">Remove the card</string>
+    <string name="xcsdk_modify_creditcard">Modify the card</string>
+    <string name="xcsdk_add_creditcard">Add a card</string>
+    <string name="xcsdk_request_pp">Sending the order&#8230;</string>
+    <string name="xcsdk_pay_fail_recover">Failed to pay.\nPlease try later or choose other payments.</string>
+    <string name="xcsdk_xiaocong_account_lack">Your account don\'t have enough coins.</string>
+    <string name="xcsdk_paying">Paying&#8230;</string>
+    <string name="xcsdk_pay_xclogin">Change your account</string>
+    <string name="xcsdk_pay_xccoin_show">Cost %1$d Xiaocong Coins</string>
+    <string name="xcsdk_pay_balance_unknown">Account Balance: Unknown</string>
+    <string name="xcsdk_pay_xccoin_balance">Account Balance: %1$d coins</string>
+    <string name="xcsdk_pay_unsignin">Please sign in</string>
+    <string name="xcsdk_pay_xcid">Account：%1$s</string>
+    <string name="xcsdk_pay_confirm">Confirm Payment</string>
+    <string name="xcsdk_pay_360_fail_login">Failed to login \nPlease try later or choose other payment service.</string>
+    <string name="xcsdk_pay_360_logining">Working&#8230;</string>
 
 </resources>

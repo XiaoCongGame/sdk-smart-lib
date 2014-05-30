@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xc_banner" >
+
+        <TextView
+            android:id="@+id/xcsdk_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="25dp"
+            android:text="@string/xcsdk_xczhifupingtai"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/xcsdk_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/xcsdk_payment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pay_background" >
+    </FrameLayout>
+
+</LinearLayout>

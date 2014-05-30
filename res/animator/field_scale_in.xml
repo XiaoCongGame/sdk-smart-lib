@@ -2,10 +2,20 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <objectAnimator
-        android:duration="250"
-        android:propertyName="scaleX"
+        android:duration="350"
+        android:propertyName="scaleY"
         android:valueFrom="0.0"
         android:valueTo="1.0" >
     </objectAnimator>
+
+    <set android:ordering="sequentially" >
+        <objectAnimator
+            android:duration="1000"
+            android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+            android:propertyName="scaleX"
+            android:valueFrom="0.0"
+            android:valueTo="1.0" >
+        </objectAnimator>
+    </set>
 
 </set>

@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/xcsdk_yeepay_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/xcsdk_pay_amount"
+                style="@style/yeepay_fragment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/xcsdk_add_creditcard"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="left"
+                android:text="@string/xcsdk_add_creditcard"
+                android:textSize="32sp" />
+
+            <Spinner
+                android:id="@+id/xcsdk_creditcard_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/xcsdk_pay_with_this"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/xcsdk_pay_with_this"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/xcsdk_creditcard_remove"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xcsdk_remove_creditcard"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/xcsdk_creditcard_modify"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xcsdk_modify_creditcard"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xcsdk_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/xcsdk_creditcard_num"
+                style="@style/yeepay_fragment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xcsdk_tip_input_credit"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/xcsdk_creditcard_expire"
+                style="@style/yeepay_fragment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xcsdk_tip_input_credit_validcode"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/xcsdk_creditcard_cvv2"
+                style="@style/yeepay_fragment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xcsdk_tip_input_credit_cvv2"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/xcsdk_creditcard_phone"
+                style="@style/yeepay_fragment_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xcsdk_tip_input_credit_mobile"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/xcsdk_finish_cardinfo"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/xcsdk_confirm" />
+
+            <Button
+                android:id="@+id/xcsdk_cancel_cardinfo"
+                style="@style/yeepay_fragment_btn"
+                android:layout_width="match_parent"
+                android:text="@string/xcsdk_cancel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xcsdk_creditcard_paying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/xcsdk_creditcard_paying_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

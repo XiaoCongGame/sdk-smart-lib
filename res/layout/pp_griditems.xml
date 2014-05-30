@@ -16,7 +16,7 @@
         android:focusable="false"
         android:text="0"
         android:textColor="@android:color/black"
-        android:textSize="13dip"
+        android:textSize="13sp"
         android:textStyle="bold" />
 
 </LinearLayout>

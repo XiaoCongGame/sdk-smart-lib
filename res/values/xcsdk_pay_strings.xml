@@ -3,7 +3,7 @@
     <string name="xcsdk_xczhifupingtai">小葱支付平台</string>
     <string name="xcsdk_cmcc">中国移动</string>
     <string name="xcsdk_pay_amount">支付金额：</string>
-    <string name="xcsdk_rmb_200">200  RMB</string>
+    <string name="xcsdk_rmb_200">200 RMB</string>
     <string name="xcsdk_tip_input_mobile">请输入支付手机号</string>
     <string name="xcsdk_next_step">下一步</string>
     <string name="xcsdk_charge_sms_sent">充值短信已经发至您的手机</string>
@@ -12,7 +12,7 @@
     <string name="xcsdk_finish_pay_btn">支付完成</string>
     <string name="xcsdk_credit_num">信用卡号：</string>
     <string name="xcsdk_tip_input_credit">请输入信用卡卡号</string>
-    <string name="xcsdk_tip_input_credit_validcode">请输入有效期，如06／27请输入0627</string>
+    <string name="xcsdk_tip_input_credit_validcode">请输入4位有效期，如0627</string>
     <string name="xcsdk_tip_input_credit_cvv2">请输入CVV2,签名栏后三位</string>
     <string name="xcsdk_tip_input_credit_mobile">请输入信用卡预留手机号</string>
     <string name="xcsdk_agree_charge">同意《充值协议》</string>
@@ -46,8 +46,7 @@
     <string name="notice_xiyigree">请勾选充值协议</string>
     <string name="notice_cardphone">请输入正确的手机号</string>
     <string name="notice_card_cvv2">CVV2码有误</string>
-    <string name="notice_card_cvv2null">CVV2码不能为空</string>
-    <string name="notice_card_vakdity">有效期有误</string>
+    <string name="notice_card_vakdity">请填写正确的有效期</string>
     <string name="notice_card_vakditynull">有效期不能为空</string>
     <string name="notice_cardwrong">卡号输入有误</string>
     <string name="notice_cardnull">卡号不能为空</string>
@@ -62,15 +61,35 @@
     <string name="xcsdk_success">成功</string>
     <string name="xcsdk_fail">失败</string>
     <string name="xcsdk_order_null">定单为空</string>
-    <string name="notice_loading">数据处理&#8230;</string>
+    <string name="notice_loading">数据处理中&#8230;</string>
     <string name="jiancepay">正在检测安全支付服务版本</string>
-    <string name="confirm_install_hint">"安装提示"</string>
-    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="confirm_install_hint">安装提示</string>
+    <string name="confirm_install">为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。</string>
     <string name="gamepayxc_info">购买信息不完整</string>
     <string name="gamepayxc_info2">购买信息有误</string>
     <string name="order_createfail_null">订单生成失败,服务返回订单信息空</string>
     <string name="order_createfail">订单生成失败</string>
     <string name="cancel_buythis">取消此次购买吗？</string>
     <string name="confirm_xc">小葱提示</string>
+    <string name="xcsdk_progress">正在处理一些事情&#8230;</string>
+    <string name="xcsdk_new_credit_card">添加信用卡</string>
+    <string name="xcsdk_pay_amount_show">支付金额：%1$s 元</string>
+    <string name="xcsdk_pay_xccoin_show">需要支付%1$d个小葱币</string>
+    <string name="xcsdk_pay_with_this">使用此卡支付</string>
+    <string name="xcsdk_remove_creditcard">删除此卡</string>
+    <string name="xcsdk_modify_creditcard">修改卡信息</string>
+    <string name="xcsdk_add_creditcard">添加信用卡</string>
+    <string name="xcsdk_request_pp">正在请求订单请稍后&#8230;</string>
+    <string name="xcsdk_pay_fail_recover">支付失败，请稍后再试；或选用其他支付方式</string>
+    <string name="xcsdk_xiaocong_account_lack">支付失败，小葱币不足！</string>
+    <string name="xcsdk_paying">支付中&#8230;请稍候</string>
+    <string name="xcsdk_pay_xclogin">切换账户</string>
+    <string name="xcsdk_pay_balance_unknown">账户余额：未知</string>
+    <string name="xcsdk_pay_xccoin_balance">账户余额：%1$d 个小葱币</string>
+    <string name="xcsdk_pay_unsignin">请登录</string>
+    <string name="xcsdk_pay_xcid">小葱账户：%1$s</string>
+    <string name="xcsdk_pay_confirm">确认支付</string>
+    <string name="xcsdk_pay_360_fail_login">登录360账户失败 \n请稍后再试或选用其他支付方式</string>
+    <string name="xcsdk_pay_360_logining">正在获取授权</string>
 
 </resources>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:gravity="right" >
+
+    <TextView
+        android:id="@+id/xcsdk_pay_xccoin_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="36sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/xcsdk_xccoin_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/xcsdk_pay_xccoin_amount"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:text="@string/xcsdk_pay_confirm"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/xcsdk_pay_xccoin_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/xcsdk_xccoin_pay"
+        android:text="@string/xcsdk_pay_balance_unknown"
+        android:textSize="36sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/xcsdk_pay_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/xcsdk_pay_xccoin_balance"
+        android:text="@string/xcsdk_pay_unsignin"
+        android:textSize="36sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/xcsdk_pay_xclogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/xcsdk_pay_user"
+        android:text="@string/xcsdk_pay_xclogin"
+        android:textSize="32sp" />
+
+</RelativeLayout>
