@@ -1,41 +1,41 @@
-# Payment Development Guide
+# 支付开发指南
 
 [toc]
 
 <a name="appply_for_account" ></a>
-## Developer Identity
+## 开发者账户
 
-You need apply for an developer identity first. The `partnerId`and MD5/RSA key are used to encrypt the communication. The `client_id` and `client_secret` are used by Oauth 2 protocol.
+与小葱支付服务器交互，需要使用MD5或RSA加密数据。为此，需要申请开发者标识（`partnerId`）和MD5、RSA密钥。
 
-In demo project, these parameters are constants in `tv.xiaocong.sdk.demo.Keys`.
+当使用小葱币支付时，需要用户使用小葱 *OAuth 2* 登录。使用OAuth2需要申请`client_id`/`client_secret`。
 
-## How to run the demo
+## 如何运行DEMO
 
-The SDK is an Android Library project. Download: https://github.com/XiaoCongGame/sdk-smart-lib。
+SDK 以 Android Library 工程的形式提供。下载地址：https://github.com/XiaoCongGame/sdk-smart-lib。
 
-The Demo is an Android project. Download: https://github.com/XiaoCongGame/sdk-smart-demo。
+Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
 
-Download two projects and import them into Eclipse. The Demo project depends on the SDK project. Fix the denpendency error in Eclipse if you find one.
+将两个工程下载后，导入Eclipse。配置Demo工程依赖SDK工程。运行Demo工程即可。
 
-The demo project has been simplified to work with. Now you don't need any adjustment. The demo could be run and tested immediately.
+## 可用的支付方式
 
-## Payment service providers
+目前我们支持以下支付方式：
 
-Now we support the following payment service providers in China:
-
-- Xiaocong coins
-- Alipay
-- Yee Pay
-- PP
-- 360 coins
+- 小葱币
+- 支付宝
+- 易宝
+- PP（信用）支付
+- 360币
 
 ![](payways.png)
 
-## Using the SDK
+## 使用SDK
 
-Please first read codes of the Demo project.
+请参见Demo工程的代码。
 
-When you ask user to pay for something, make your app into our payment `Activity`. The entrance of payment service is `PaymentHelper.startMe`. After payment, you caller `Activity` will receive the result.
+开发者ID、密钥统一放在`tv.xiaocong.sdk.demo.Keys`。可以替换为您的正式账户和密钥。
+
+支付的进入点是`PaymentHelper.startMe`：
 
 ```java
     /**
@@ -73,49 +73,48 @@ When you ask user to pay for something, make your app into our payment `Activity
     }
 ```
 
-The possible payment results are list in `com.xiaocong.sdk.PaymentResults`.
+所有可能的支付结果列在`com.xiaocong.sdk.PaymentResults`。
 
 - `ILLEGAL_PARAMETER`: Your request(ie. calling `pay`) is invalid.
-- `NO_PAY_WAY`: No payment service providers available.
-- `PAYRESULT_OK`: Success
-- `PAYRESULT_FAIL`: Fail for sure
-- `CANCEL_BUY`: You cancel the payemnt finally.
-- `CREATE_ORDER_FAIL`: Failed to create the order in Xiaocong.
-- `PAYRESULT_PENDING`: The result is pending, please wait for your server to be notified.
+- `NO_PAY_WAY`: 没有可用的支付方式。请联系商务人员检查签约时约定的支付方式。
+- `PAYRESULT_OK`: 支付成功。
+- `PAYRESULT_FAIL`: 支付失败。
+- `CANCEL_BUY`: 用户取消支付。
+- `CREATE_ORDER_FAIL`: 不能在小葱支付系统内创建定单。
+- `PAYRESULT_PENDING`: 支付结果不确定。请等待服务器回调。
 
-## Notify your server the result
+## 服务器回调
 
-Finally you server will be notified the result:
+最终您的游戏服务器会收到我们的回调。形如：
 ```
 http://notify.java.jpxx.org/notify.jsp?orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
 ```
 
-The HTTP query parameters:
+回调中HTTP查询参数是：
 
-- `orderNo`: the order number you sent to us at the beginning
-- `amount`: the paying unit is RMB cent
-- `account`: the xiaocong account of the user
-- `sign`: the signature of the request. [The format](https://github.com/XiaoCongGame/xcPay_notify_demo/blob/master/src/main/webapp/notify.jsp).
-- `notifyTime`：a long integer
-- `goodsDes`：the goods description you sent to us before
-- `status`: `1` for success; `2` for failure
-- `mark`: the remark you sent to us
+- `orderNo`: 您给我们的订单号
+- `amount`: 单位为分
+- `account`: 用户小葱号
+- `sign`: 请求签名。签名格式参见https://github.com/XiaoCongGame/xcPay_notify_demo/blob/master/src/main/webapp/notify.jsp。
+- `notifyTime`：回调时间，一个长整数。
+- `goodsDes`：您在支付时传来的商品描述。
+- `status`: `1`表示成功；`2`表示失败。
+- `mark`: 您在支付时传来的备注。
 
-The response of the notification should be a single word in HTTP response body.
+当收到我们的回调后，您可以给出以下响应，在HTTP响应Body中显示以下几个简单的字符：
 
 - `success`: you got the result
 - `fail`: any exceptions
 - `sign_fail`: for invalid signature
 
-## Query for the order
+## 查询订单
 
-Using following API to query the order from our server.
-
+可以通过以下URL查询订单：
 ```
 http://data.xiaocong.tv/queryOrderInfo.action?orderNo=2013041510251288&version=2&sign=b4600ae75b27f5fe1fb213f6e6d9620a
 ```
 
-The http query parameter:
+Http请求参数：
 
 - `orderNo` [String]：The order number in your system, which is identical with the parameter `orderNo` of `XcPayUtils.pay`.
 - `version` [int]：Always be `2`。
