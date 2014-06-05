@@ -81,6 +81,7 @@ The possible payment results are list in `com.xiaocong.sdk.PaymentResults`.
 - `PAYRESULT_FAIL`: Fail for sure
 - `CANCEL_BUY`: You cancel the payemnt finally.
 - `CREATE_ORDER_FAIL`: Failed to create the order in Xiaocong.
+- `DUPLICATE_ORDER_NO`: Your submitted order no is duplicate in our system. If you get this error, please check your generation mechanism of order no.
 - `PAYRESULT_PENDING`: The result is pending, please wait for your server to be notified.
 
 ## Notify your server the result

@@ -81,6 +81,7 @@ Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
 - `PAYRESULT_FAIL`: 支付失败。
 - `CANCEL_BUY`: 用户取消支付。
 - `CREATE_ORDER_FAIL`: 不能在小葱支付系统内创建定单。
+- `DUPLICATE_ORDER_NO`：订单号重复。如果遇到这个错误，请检查你的订单号生成逻辑，可能有BUG。
 - `PAYRESULT_PENDING`: 支付结果不确定。请等待服务器回调。
 
 ## 服务器回调
