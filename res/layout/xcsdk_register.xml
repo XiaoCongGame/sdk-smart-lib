@@ -1,88 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-     android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="40dp" >
-
-    <EditText
-        android:id="@+id/xcsdk_register_username"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_register_username"
-        android:inputType="phone"
-        android:singleLine="true" />
-
-    <Button
-        android:id="@+id/xcsdk_register_send_code"
-        style="@style/xcsdk_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="sendCode"
-        android:text="@string/xcsdk_register_send_code" />
-
-    <EditText
-        android:id="@+id/xcsdk_register_code"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_register_code"
-        android:singleLine="true"
-        android:textColor="@color/xcsdk_invalid_field" />
-
-    <EditText
-        android:id="@+id/xcsdk_register_password"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_register_password"
-        android:inputType="textPassword"
-        android:singleLine="true" />
+    android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/xcsdk_register_password_status"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/xcsdk_register_password_tip"
-        android:textSize="@dimen/xcsdk_dialog_tip_size" />
+        style="@style/DialogTitle"
+        android:text="@string/xcsdk_register_title" />
 
-    <EditText
-        android:id="@+id/xcsdk_register_password_confirm"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_register_password_confirm"
-        android:inputType="textPassword"
-        android:singleLine="true" />
+    <LinearLayout style="@style/DialogBody" >
 
-    <Button
-        android:id="@+id/xcsdk_register_submit"
-        style="@style/xcsdk_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="submit"
-        android:text="@string/xcsdk_register_submit" />
+        <EditText
+            android:id="@+id/xcsdk_register_username"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_register_username"
+            android:inputType="phone"
+            android:singleLine="true" />
 
-    <Button
-        android:id="@+id/xcsdk_register_cancel"
-        style="@style/xcsdk_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cancelRegister"
-        android:text="@string/xcsdk_register_cancel" />
+        <Button
+            android:id="@+id/xcsdk_register_send_code"
+            style="@style/Button.Dialog"
+            android:onClick="sendCode"
+            android:text="@string/xcsdk_register_send_code" />
 
-    <TextView
-        android:id="@+id/xcsdk_register_status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#295c70"
-        android:gravity="center"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
-        android:textSize="@dimen/xcsdk_dialog_tip_size"
-        android:visibility="gone" />
+        <EditText
+            android:id="@+id/xcsdk_register_code"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_register_code"
+            android:singleLine="true"
+            android:textColor="@color/xcsdk_invalid_field" />
+
+        <EditText
+            android:id="@+id/xcsdk_register_password"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_register_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/xcsdk_register_password_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/xcsdk_register_password_tip"
+            android:textSize="@dimen/dialog_tip_size" />
+
+        <EditText
+            android:id="@+id/xcsdk_register_password_confirm"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_register_password_confirm"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/xcsdk_register_submit"
+            style="@style/Button.Dialog"
+            android:onClick="submit"
+            android:text="@string/xcsdk_register_submit" />
+
+        <Button
+            android:id="@+id/xcsdk_register_cancel"
+            style="@style/Button.Dialog"
+            android:onClick="cancelRegister"
+            android:text="@string/xcsdk_register_cancel" />
+
+        <TextView
+            android:id="@+id/xcsdk_register_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/dialog_tip_size"
+            android:visibility="gone" />
+    </LinearLayout>
 
 </LinearLayout>

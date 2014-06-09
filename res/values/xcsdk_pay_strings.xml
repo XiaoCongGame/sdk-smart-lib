@@ -11,10 +11,10 @@
     <string name="xcsdk_tip_pay_finish">完成支付请点击支付完成回到游戏，2分钟延迟</string>
     <string name="xcsdk_finish_pay_btn">支付完成</string>
     <string name="xcsdk_credit_num">信用卡号：</string>
-    <string name="xcsdk_tip_input_credit">请输入信用卡卡号</string>
-    <string name="xcsdk_tip_input_credit_validcode">请输入4位有效期，如0627</string>
-    <string name="xcsdk_tip_input_credit_cvv2">请输入CVV2,签名栏后三位</string>
-    <string name="xcsdk_tip_input_credit_mobile">请输入信用卡预留手机号</string>
+    <string name="xcsdk_tip_input_credit">信用卡卡号</string>
+    <string name="xcsdk_tip_input_credit_validcode">4位有效期，如0627</string>
+    <string name="xcsdk_tip_input_credit_cvv2">签名栏后三位</string>
+    <string name="xcsdk_tip_input_credit_mobile">信用卡预留手机号</string>
     <string name="xcsdk_agree_charge">同意《充值协议》</string>
     <string name="xcsdk_contract_charge">小葱充值协议</string>
     <string name="xcsdk_close_btn">关闭</string>

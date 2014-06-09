@@ -12,7 +12,7 @@
     <string name="xcsdk_register_code_sent">已发送。稍后可以重发</string>
     <string name="xcsdk_register_send_code_again">再次发送</string>
     <string name="xcsdk_register_cancel">取消</string>
-    <string name="xcsdk_register_password_tip">请输入6到16位密码，可以是字母或数字</string>
+    <string name="xcsdk_register_password_tip">请输入6到16位字母或数字</string>
     <string name="xcsdk_send_code_error">发送验证码失败！</string>
     <string name="xcsdk_registering">正在注册&#8230;</string>
     <string name="xcsdk_register_success">注册成功！</string>

@@ -1,8 +1,13 @@
 <GridView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/xcsdk_payways"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    android:numColumns="4" >
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/pay_list_margin_h"
+    android:layout_marginRight="@dimen/pay_list_margin_h"
+    android:layout_marginTop="@dimen/pay_list_margin_top"
+    android:horizontalSpacing="@dimen/pay_list_space_h"
+    android:numColumns="3"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="@dimen/pay_list_space_v" >
 
 </GridView>

@@ -1,57 +1,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="480dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginTop="20dp"
     android:gravity="right" >
 
     <TextView
         android:id="@+id/xcsdk_pay_xccoin_amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:textSize="36sp" >
+        style="@style/PayTip"
+        android:layout_alignParentLeft="true" >
     </TextView>
 
     <Button
         android:id="@+id/xcsdk_xccoin_pay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        style="@style/Button.Pay"
         android:layout_below="@id/xcsdk_pay_xccoin_amount"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:enabled="false"
-        android:text="@string/xcsdk_pay_confirm"
-        android:textSize="32sp" />
+        android:text="@string/xcsdk_pay_confirm" />
 
     <TextView
         android:id="@+id/xcsdk_pay_xccoin_balance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        style="@style/PayTip"
         android:layout_below="@id/xcsdk_xccoin_pay"
-        android:text="@string/xcsdk_pay_balance_unknown"
-        android:textSize="36sp" >
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/pay_tip_balance_margin_top"
+        android:text="@string/xcsdk_pay_balance_unknown" >
     </TextView>
 
     <TextView
         android:id="@+id/xcsdk_pay_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        style="@style/PayTip"
         android:layout_below="@id/xcsdk_pay_xccoin_balance"
-        android:text="@string/xcsdk_pay_unsignin"
-        android:textSize="36sp" >
+        android:layout_alignParentLeft="true"
+        android:text="@string/xcsdk_pay_unsignin" >
     </TextView>
 
     <Button
         android:id="@+id/xcsdk_pay_xclogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        style="@style/Button.Pay"
         android:layout_below="@id/xcsdk_pay_user"
-        android:text="@string/xcsdk_pay_xclogin"
-        android:textSize="32sp" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/xcsdk_pay_xclogin" />
 
 </RelativeLayout>

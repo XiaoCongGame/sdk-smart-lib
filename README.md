@@ -35,4 +35,7 @@ Improve payemnt flow; Support 360 payment.
 
 Sorry for some imcompatible changes.
 
+### Version 1.0.0
+
+Improve UI; Fix some bugs; Support small screen.
 

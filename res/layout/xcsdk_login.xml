@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="40dp" >
+    android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/xcsdk_login_username"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_login_username"
-        android:singleLine="true" />
+    <TextView
+        style="@style/DialogTitle"
+        android:text="@string/xcsdk_login_title" />
 
-    <EditText
-        android:id="@+id/xcsdk_login_password"
-        style="@style/xcsdk_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/xcsdk_login_password"
-        android:inputType="textPassword"
-        android:singleLine="true" />
+    <LinearLayout style="@style/DialogBody" >
 
-    <Button
-        android:id="@+id/xcsdk_login_btn"
-        style="@style/xcsdk_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="login"
-        android:text="@string/xcsdk_login_btn" />
+        <EditText
+            android:id="@+id/xcsdk_login_username"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_login_username"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/xcsdk_login_password"
+            style="@style/EditView.Dialog"
+            android:hint="@string/xcsdk_login_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/xcsdk_login_btn"
+            style="@style/Button.Dialog"
+            android:onClick="login"
+            android:text="@string/xcsdk_login_btn" />
+    </LinearLayout>
 
 </LinearLayout>

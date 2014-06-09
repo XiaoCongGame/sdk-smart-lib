@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common -->
+    <dimen name="bg_stroke_width">4dp</dimen>
+    <dimen name="bg_corner">10dp</dimen>
+    <dimen name="btn_text_size">42sp</dimen>
+    <dimen name="btn_height">80dp</dimen>
+    <dimen name="btn_big_text_size">50sp</dimen>
+    <dimen name="btn_big_height">110dp</dimen>
+    <dimen name="btn_small_text_size">32sp</dimen>
+    <dimen name="btn_small_height">60dp</dimen>
+    <dimen name="edittext_text_size">42sp</dimen>
+    <dimen name="edittext_height">80dp</dimen>
+    <dimen name="edittext_padding_h">20sp</dimen>
+    <dimen name="dialog_title_text_size">45dp</dimen>
+    <dimen name="dialog_title_height">80dp</dimen>
+    <dimen name="dialog_padding_h">80dp</dimen>
+    <dimen name="dialog_padding_top">50dp</dimen>
+    <dimen name="dialog_padding_bottom">50dp</dimen>
+    <dimen name="dialog_field_margin">15dp</dimen>
+    <dimen name="dialog_tip_size">35sp</dimen>
+    <dimen name="spinner_text_size">38sp</dimen>
+    <!-- login/register -->
+    <dimen name="login_edittext_width">450dp</dimen>
+    <dimen name="login_btn_width">450dp</dimen>
+
+    <!-- pay -->
+    <dimen name="pay_field_width">500dp</dimen>
+    <dimen name="pay_title_height">80dp</dimen>
+    <dimen name="pay_title_text_size">35sp</dimen>
+    <dimen name="pay_list_margin_h">100dp</dimen>
+    <dimen name="pay_list_margin_top">50dp</dimen>
+    <dimen name="pay_list_space_h">40dp</dimen>
+    <dimen name="pay_list_space_v">50dp</dimen>
+    <dimen name="pay_tip_text_size">36sp</dimen>
+    <dimen name="pay_tip_balance_margin_top">40dp</dimen>
+    <dimen name="pay_tip_margin_v">10dp</dimen>
+
+    <!--  -->
+    <dimen name="xcsdk_dialog_button_padding">8dp</dimen>
+    <dimen name="xcsdk_dialog_title_text">30sp</dimen>
+    <dimen name="xcsdk_focus_stroke_width">4dp</dimen>
+
+</resources>

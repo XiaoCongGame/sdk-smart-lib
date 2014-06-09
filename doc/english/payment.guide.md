@@ -46,6 +46,8 @@ The signin dialog will show up if
 
 ![](xiaocong-coins-change-account.png)
 
+If you don't want users to change their accounts, you need pass the accessToken to us(See `tv.xiaocong.sdk.demo.XcPayUtils`).
+
 ### Yeepay
 
 If the user use this provider first time, a screen that collects all information for payment will show up as following:
@@ -89,12 +91,16 @@ When you ask user to pay for something, make your app into our payment `Activity
      *            (Required) the callback URL in your server.
      * @param remark
      *            (Optional) some remark for this order
+     * @param accessToken
+     *            (Optional) If you don't want users to change their account, provide a accessToken
+     *            yourself; If you pass null, then we'll pop up login dialog to get the accessToken
+     *            if necessary.
      */
     public static void pay(Activity caller, int partnerId, int amount, String signType,
             String orderNo, String pkgname, String goodsDes, String signature, String notifyUrl,
-            String remark) {
+            String remark, String accessToken) {
         PaymentHelper.startMe(caller, partnerId, amount, signType, orderNo, pkgname, goodsDes,
-                signature, notifyUrl, remark, Keys.CLIENT_ID, Keys.CLIENT_SECRET);
+                signature, notifyUrl, remark, Keys.CLIENT_ID, Keys.CLIENT_SECRET, accessToken);
     }
 ```
 

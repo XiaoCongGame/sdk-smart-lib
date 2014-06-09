@@ -1,0 +1,39 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dialognotitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="PayDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Button.Pay">
+        <item name="android:layout_width">@dimen/pay_field_width</item>
+    </style>
+
+    <style name="Button.Big.Pay">
+        <item name="android:layout_width">@dimen/pay_field_width</item>
+    </style>
+
+    <style name="Button.Small.Pay">
+        <item name="android:layout_width">@dimen/pay_field_width</item>
+    </style>
+
+    <style name="EditView.Pay">
+        <item name="android:layout_width">@dimen/pay_field_width</item>
+    </style>
+
+    <style name="PayTip">
+        <item name="android:textSize">@dimen/pay_tip_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/pay_tip_margin_v</item>
+        <item name="android:layout_marginBottom">@dimen/pay_tip_margin_v</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+</resources>

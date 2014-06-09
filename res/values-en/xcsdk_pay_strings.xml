@@ -13,7 +13,7 @@
     <string name="xcsdk_credit_num">Your Credit</string>
     <string name="xcsdk_tip_input_credit">Your Credit</string>
     <string name="xcsdk_tip_input_credit_validcode">Expiry Date(eg. 0627)</string>
-    <string name="xcsdk_tip_input_credit_cvv2">CVV</string>
+    <string name="xcsdk_tip_input_credit_cvv2">CVV2</string>
     <string name="xcsdk_tip_input_credit_mobile">Your mobile registered in the Bank</string>
     <string name="xcsdk_agree_charge">I agree on the contract</string>
     <string name="xcsdk_contract_charge">Xiaocong Payment Contract</string>
@@ -73,7 +73,7 @@
     <string name="confirm_xc">tip</string>
     <string name="xcsdk_progress">Loading&#8230;</string>
     <string name="xcsdk_new_credit_card">New Credit Card</string>
-    <string name="xcsdk_pay_amount_show">Paying amount：￥%1$s RMB</string>
+    <string name="xcsdk_pay_amount_show">Paying ￥%1$s RMB</string>
     <string name="xcsdk_pay_with_this">Pay with this card</string>
     <string name="xcsdk_remove_creditcard">Remove the card</string>
     <string name="xcsdk_modify_creditcard">Modify the card</string>

@@ -10,7 +10,7 @@
 
     <set android:ordering="sequentially" >
         <objectAnimator
-            android:duration="1000"
+            android:duration="600"
             android:interpolator="@android:anim/anticipate_overshoot_interpolator"
             android:propertyName="scaleX"
             android:valueFrom="0.0"

@@ -41,6 +41,8 @@ Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
 
 ![](xiaocong-coins-change-account.png)
 
+如果你不想让用户切换账户，例如，你向让用户用已登录过的小葱账户支付，则你需要传给我们之前登录时获得的accessToken。
+
 ### Yeepay
 
 If the user use this provider first time, a screen that collects all information for payment will show up as following:
@@ -86,12 +88,16 @@ The card information will be persistent. So next time you use this provider, the
      *            (Required) the callback URL in your server.
      * @param remark
      *            (Optional) some remark for this order
+     * @param accessToken
+     *            (Optional) If you don't want users to change their account, provide a accessToken
+     *            yourself; If you pass null, then we'll pop up login dialog to get the accessToken
+     *            if necessary.
      */
     public static void pay(Activity caller, int partnerId, int amount, String signType,
             String orderNo, String pkgname, String goodsDes, String signature, String notifyUrl,
-            String remark) {
+            String remark, String accessToken) {
         PaymentHelper.startMe(caller, partnerId, amount, signType, orderNo, pkgname, goodsDes,
-                signature, notifyUrl, remark, Keys.CLIENT_ID, Keys.CLIENT_SECRET);
+                signature, notifyUrl, remark, Keys.CLIENT_ID, Keys.CLIENT_SECRET, accessToken);
     }
 ```
 

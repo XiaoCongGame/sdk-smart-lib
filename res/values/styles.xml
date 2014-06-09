@@ -1,24 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="dialognotitle" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@null</item>
-        <item name="android:windowNoTitle">true</item>
+    <style name="xcsdk_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowIsTranslucent">true</item>
-    </style>
-
-    <style name="PayDialog" parent="@android:Theme.Dialog">
-        <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="yeepay_fragment_field">
-        <item name="android:textSize">32sp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+    <style name="DialogTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_title_height</item>
+        <item name="android:background">@drawable/dialog_title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">#FFF</item>
     </style>
 
-    <style name="yeepay_fragment_btn">
-        <item name="android:textSize">28sp</item>
+    <style name="DialogBody">
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialog_body_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/dialog_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/dialog_padding_h</item>
+        <item name="android:paddingRight">@dimen/dialog_padding_h</item>
+        <item name="android:paddingTop">@dimen/dialog_padding_top</item>
+    </style>
+
+    <style name="EditView">
+        <item name="android:textSize">@dimen/edittext_text_size</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:layout_marginTop">@dimen/dialog_field_margin</item>
+        <item name="android:paddingLeft">@dimen/edittext_padding_h</item>
+        <item name="android:paddingRight">@dimen/edittext_padding_h</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorHint">#EEE</item>
+        <item name="android:textColorHighlight">#FFF</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+    </style>
+
+    <style name="EditView.Dialog">
+        <item name="android:layout_width">@dimen/login_edittext_width</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="android:layout_marginTop">@dimen/dialog_field_margin</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+
+    <style name="Button.Big">
+        <item name="android:textSize">@dimen/btn_big_text_size</item>
+        <item name="android:layout_height">@dimen/btn_big_height</item>
+    </style>
+    
+    <style name="Button.Small">
+        <item name="android:textSize">@dimen/btn_small_text_size</item>
+        <item name="android:layout_height">@dimen/btn_small_height</item>
+    </style>
+
+    <style name="Button.Dialog">
+        <item name="android:layout_width">@dimen/login_btn_width</item>
     </style>
 
 </resources>
