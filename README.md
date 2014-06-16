@@ -9,6 +9,7 @@ This is the Xiaocong SDK.
 > Tip
 * Our SDK is designed for TVs, which have higher resolution than mobile phones. We expect the resolution 1280px * 960px at least.
 * Almost all android TVs in the market carry Android 4.0+. So we need `minSdkVersion > 14` .
+* JDK 1.6+ required.
 
 ## Quick Start
 
@@ -38,4 +39,9 @@ Sorry for some imcompatible changes.
 ### Version 1.0.0
 
 Improve UI; Fix some bugs; Support small screen.
+
+### Version 1.1.0
+
+Required JDK 1.7 => 1.6.
+
 
