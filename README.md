@@ -13,14 +13,24 @@ This is the Xiaocong SDK.
 
 ## Quick Start
 
-We provide you with an Eclipse Android Library Project. Add this project as your project's dependency project.
+
+We provide you with an Eclipse Android Library Project.
+
+[0] Git clone this project to your disk. Import it into your Eclipse.
+
+![import project](doc/import_project.png)
+
+If you inspect the properties of the project, you could find out that this project is an Android library project.
+
+![this is a library](doc/properties_library.png)
+
+[1] Make this project as your project's dependency project. Open your properties of your project, go to `Android -> Library`:
 
 ![](doc/add_lib.png)
 
-Also copy all libs in `libs` of the library project to your project's `libs`.
+[2] Copy all `assets` files from Demo project to the `assets` of you project.
 
-You may need ask for developer id/key before running some functions. Please refer to [doc](./doc).
-
+![](doc/assets.png)
 
 ## Change Logs
 
