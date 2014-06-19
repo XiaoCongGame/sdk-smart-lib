@@ -124,7 +124,7 @@ http://notify.java.jpxx.org/notify.jsp?orderNo=2013041510251288&amount=10&accoun
 - `orderNo`: 您给我们的订单号
 - `amount`: 单位为分
 - `account`: 用户小葱号
-- `sign`: 请求签名。签名格式参见https://github.com/XiaoCongGame/xcPay_notify_demo/blob/master/src/main/webapp/notify.jsp。
+- `sign`: 请求签名。签名格式参见[notify.jsp](https://github.com/XiaoCongGame/xcPay_notify_demo/blob/master/src/main/webapp/notify.jsp)。
 - `notifyTime`：回调时间，一个长整数。
 - `goodsDes`：您在支付时传来的商品描述。
 - `status`: `1`表示成功；`2`表示失败。
