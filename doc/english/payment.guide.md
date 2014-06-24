@@ -117,12 +117,11 @@ The possible payment results are list in `com.xiaocong.sdk.PaymentResults`.
 
 ## Notify your server the result
 
-Finally you server will be notified the result:
-```
-http://notify.java.jpxx.org/notify.jsp?orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
-```
+Finally you server will be notified the result. The result will be `POST`ed to your server. The http body carrys with the following parameters(in `x-www-form-urlencoded`):
 
-The HTTP query parameters:
+```
+orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
+```
 
 - `orderNo`: the order number you sent to us at the beginning
 - `amount`: the paying unit is RMB cent

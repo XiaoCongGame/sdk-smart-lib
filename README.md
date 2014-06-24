@@ -28,7 +28,7 @@ If you inspect the properties of the project, you could find out that this proje
 
 ![](doc/add_lib.png)
 
-[2] Copy all `assets` files from Demo project to the `assets` of you project.
+[2] Copy all `assets` files from [Demo project](https://github.com/XiaoCongGame/sdk-smart-demo) to the `assets` of you project.
 
 ![](doc/assets.png)
 

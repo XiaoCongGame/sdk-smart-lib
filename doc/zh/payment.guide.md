@@ -114,12 +114,12 @@ The card information will be persistent. So next time you use this provider, the
 
 ## 服务器回调
 
-最终您的游戏服务器会收到我们的回调。形如：
+最终您的游戏服务器会收到我们的回调。回调以POST发出。参数在HTTP Body中。格式编码为`x-www-form-urlencoded`。携带以下参数：
 ```
-http://notify.java.jpxx.org/notify.jsp?orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
+orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
 ```
 
-回调中HTTP查询参数是：
+参数解释：
 
 - `orderNo`: 您给我们的订单号
 - `amount`: 单位为分
