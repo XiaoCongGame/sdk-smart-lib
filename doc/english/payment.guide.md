@@ -138,6 +138,8 @@ The response of the notification should be a single word in HTTP response body.
 - `fail`: any exceptions
 - `sign_fail`: for invalid signature
 
+After processing the order, we will do callback immediately. If it's failed we will call again every three minutes. But we won't call forever. The callback will give up after 24 hours.
+
 ## Query for the order
 
 Using following API to query the order from our server.
