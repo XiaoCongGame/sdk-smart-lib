@@ -37,4 +37,6 @@ Improve UI; Fix some bugs; Support small screen.
 
 Required JDK 1.7 => 1.6.
 
+### Version 1.2.0
 
+Fix a bug under Yeepay way.
