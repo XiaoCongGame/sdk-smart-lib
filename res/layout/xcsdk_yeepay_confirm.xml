@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/DialogTitle"
+        android:text="@string/xcsdk_yeepay_security_title" />
+
+    <LinearLayout
+        style="@style/DialogBody"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xcsdk_yeepay_security_content"
+            android:layout_marginTop="@dimen/dialog_body_margin"
+            android:layout_marginBottom="@dimen/dialog_body_margin"
+            android:textSize="@dimen/dialog_body_text_size" />
+
+        <Button
+            android:id="@+id/xcsdk_yeepay_security_go"
+            style="@style/Button.Dialog"
+            android:focusableInTouchMode="true"
+            android:text="@string/xcsdk_yeepay_security_go" >
+
+            <requestFocus />
+        </Button>
+
+        <Button
+            android:id="@+id/xcsdk_yeepay_security_back"
+            style="@style/Button.Dialog"
+            android:text="@string/xcsdk_yeepay_security_back" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

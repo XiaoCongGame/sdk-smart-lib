@@ -15,7 +15,11 @@ This is the Xiaocong SDK.
 
 [English](doc/english/quick-start.md) | [中文版](doc/zh/quick-start.md)
 
+For more documents, you could inspect the `doc` directory in the SDK.
+
 ## Change Logs | 版本
+
+You could find every release version in [release page](https://github.com/XiaoCongGame/sdk-smart-lib/releases).
 
 ### Version 0.9.1
 
@@ -40,3 +44,7 @@ Required JDK 1.7 => 1.6.
 ### Version 1.2.0
 
 Fix a bug under Yeepay way.
+
+### Version 1.3.0
+
+Add a 'Sign up' button in sign-in dialog. | 在登录界面底部增加注册按钮。

@@ -18,7 +18,7 @@
     </style>
 
     <style name="DialogBody">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/dialog_body_bg</item>
         <item name="android:orientation">vertical</item>
@@ -56,7 +56,7 @@
         <item name="android:textSize">@dimen/btn_big_text_size</item>
         <item name="android:layout_height">@dimen/btn_big_height</item>
     </style>
-    
+
     <style name="Button.Small">
         <item name="android:textSize">@dimen/btn_small_text_size</item>
         <item name="android:layout_height">@dimen/btn_small_height</item>
@@ -64,6 +64,11 @@
 
     <style name="Button.Dialog">
         <item name="android:layout_width">@dimen/login_btn_width</item>
+    </style>
+
+    <style name="Button.Dialog.Small">
+        <item name="android:textSize">@dimen/btn_small_text_size</item>
+        <item name="android:layout_height">@dimen/btn_small_height</item>
     </style>
 
 </resources>

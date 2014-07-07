@@ -91,5 +91,9 @@
     <string name="xcsdk_pay_confirm">Confirm Payment</string>
     <string name="xcsdk_pay_360_fail_login">Failed to login \nPlease try later or choose other payment service.</string>
     <string name="xcsdk_pay_360_logining">Working&#8230;</string>
+    <string name="xcsdk_yeepay_security_title">Yeepay Security Warning</string>
+    <string name="xcsdk_yeepay_security_content">Warning: please use this payment way only in a secure place!</string>
+    <string name="xcsdk_yeepay_security_go">Continue</string>
+    <string name="xcsdk_yeepay_security_back">Return</string>
 
 </resources>

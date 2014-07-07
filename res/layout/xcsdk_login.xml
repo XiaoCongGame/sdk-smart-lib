@@ -29,6 +29,13 @@
             style="@style/Button.Dialog"
             android:onClick="login"
             android:text="@string/xcsdk_login_btn" />
+
+        <Button
+            android:id="@+id/xcsdk_signup_btn"
+            style="@style/Button.Dialog.Small"
+            android:layout_marginTop="@dimen/login_dialog_signup_top_margin"
+            android:onClick="toSignup"
+            android:text="@string/xcsdk_signup_btn" />
     </LinearLayout>
 
 </LinearLayout>
