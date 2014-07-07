@@ -25,3 +25,21 @@ Users could sign in by their usernames/email/mobile.
 The backend system is powered by Oauth 2.0. You'll get a `access_token` after signing up.
 
 ![](signin.png)
+
+In the callback of your activity, you could find the accessToken and username from the Intent.
+
+```
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == REQUEST_CODE_LOGIN && resultCode == RESULT_OK && data != null) {
+        String accessToken = data.getStringExtra(LoginActivity.RESPONSE_ACCESS_TOKEN);
+        String username = data.getStringExtra(LoginActivity.USERNAME);
+
+        String toast = String.format("access_token: %s, username: %s", accessToken, username);
+        Toast.makeText(this, toast, Toast.LENGTH_LONG).show();
+    }
+    ...
+```
+
+The username and accessToken will be stored in `SharedPreferences` after sign-in. You could call `tv.xiaocong.sdk.security.LoginActivity.getSecurePreferences(Context)` to get the `SharedPreferences`. You could use the keys `tv.xiaocong.sdk.security.LoginActivity.RESPONSE_ACCESS_TOKEN`, `tv.xiaocong.sdk.security.LoginActivity.RESPONSE_REFRESH_TOKEN`, `tv.xiaocong.sdk.security.LoginActivity.USERNAME` to fecth the AccessToken, RefreshToken and the username.
+
