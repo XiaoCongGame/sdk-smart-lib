@@ -29,7 +29,7 @@ Now we support the following payment service providers in China:
 - PP
 - 360 coins
 
-![](payways.png)
+![](img/payways.png)
 
 ### Xiaocong Coins
 
@@ -37,14 +37,14 @@ The following is the screen for Xiaocong coins.
 
 Users will know how many coins they will pay, the account balance, and the account ID. They could **change the account** to pay, if, for example, the current account don't have enough coins.
 
-![](xc_xiaocong_coins.png)
+![](img/xc_xiaocong_coins.png)
 
 The signin dialog will show up if
 
 - Users is going to change the account to pay
 - The signin session expire.
 
-![](xiaocong-coins-change-account.png)
+![](img/xiaocong-coins-change-account.png)
 
 If you don't want users to change their accounts, you need pass the accessToken to us(See `tv.xiaocong.sdk.demo.XcPayUtils`).
 
@@ -52,11 +52,11 @@ If you don't want users to change their accounts, you need pass the accessToken 
 
 If the user use this provider first time, a screen that collects all information for payment will show up as following:
 
-![](yeepay_input_cards.png)
+![](img/yeepay_input_cards.png)
 
 The card information will be persistent. So next time you use this provider, there're be a list of cards from which you could select one, instead of typing again.
 
-![](yeepay_list.png)
+![](img/yeepay_list.png)
 
 ## Using the SDK
 

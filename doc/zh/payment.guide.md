@@ -27,19 +27,19 @@ Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
 - PP（信用）支付
 - 360币
 
-![](payways.png)
+![](img/payways.png)
 
 ### 小葱币
 
 下面是小葱币的支付界面。界面将显示本次需要支付的小葱币数量，当前账户余额与账户ID。用户可以选择更换支付账户——如果——例如，当前账户余额不足。
-![](xc_xiaocong_coins.png)
+![](img/xc_xiaocong_coins.png)
 
 如果检测到用户已登录，且登录未过期，则将直接使用存在的账户。否则，在此界面可能弹出登录对话框：
 
 - 如果用户选择更换账户
 - 如果之前登录的账户过期。
 
-![](xiaocong-coins-change-account.png)
+![](img/xiaocong-coins-change-account.png)
 
 如果你不想让用户切换账户，例如，你向让用户用已登录过的小葱账户支付，则你需要传给我们之前登录时获得的accessToken。
 
@@ -47,11 +47,11 @@ Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
 
 If the user use this provider first time, a screen that collects all information for payment will show up as following:
 
-![](yeepay_input_cards.png)
+![](img/yeepay_input_cards.png)
 
 The card information will be persistent. So next time you use this provider, there're be a list of cards from which you could select one, instead of typing again.
 
-![](yeepay_list.png)
+![](img/yeepay_list.png)
 
 ## 使用SDK
 

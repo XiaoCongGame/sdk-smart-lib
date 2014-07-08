@@ -5,20 +5,20 @@
 用户可以使用SDK注册一个新的小葱号。流程如下：
 
 1. 用户只能用手机号注册。用手机号做用户名。
-	![First step](signup-1.png)
+	![First step](img/signup-1.png)
 1. 需要验证发送到手机上的验证码。
-	![step2](signup-2.png)
-	![step2](signup-3.png)
+	![step2](img/signup-2.png)
+	![step2](img/signup-3.png)
 1. 输入两次密码。密码长度为6到16个字母或数字。
-	![step2](signup-4.png)
+	![step2](img/signup-4.png)
 1. 提交请求
-	![step2](signup-5.png)
+	![step2](img/signup-5.png)
 
 ## 登录
 
 用户使用用户名登录。用户名可以是手机号、邮箱、小葱号（取决于用户注册时使用的设备）。
 
-![](signin.png)
+![](img/signin.png)
 
 在调用登录Activity后，在回调中可以从Intent中取到AccessToken和用户名。
 
