@@ -11,9 +11,9 @@
 
 ## 如何运行DEMO
 
-SDK 以 Android Library 工程的形式提供。下载地址：https://github.com/XiaoCongGame/sdk-smart-lib。
+SDK 以 Android Library 工程的形式提供。下载地址：https://github.com/XiaoCongGame/sdk-smart-lib
 
-Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo。
+Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo
 
 将两个工程下载后，导入Eclipse。配置Demo工程依赖SDK工程。运行Demo工程即可。
 
