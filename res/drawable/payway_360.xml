@@ -3,7 +3,7 @@
 
     <item android:drawable="@drawable/payway_360_focus" android:state_selected="true" />
     <item android:drawable="@drawable/payway_360_focus" android:state_focused="true"/>
-    <item android:drawable="@drawable/payway_360_hover" android:state_hovered="true"/>
+    <!-- <item android:drawable="@drawable/payway_360_hover" android:state_hovered="true"/> -->
     <item android:drawable="@drawable/payway_360_default"/>
 
 </selector>

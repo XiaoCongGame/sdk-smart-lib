@@ -48,3 +48,8 @@ Fix a bug under Yeepay way.
 ### Version 1.3.0
 
 Add a 'Sign up' button in sign-in dialog. | 在登录界面底部增加注册按钮。
+
+### Version 1.3.1
+
+Reduce memory footprint(by 30M);
+Improve the response to network failure: If network failure occur which is not recoverable, return a new state `com.xiaocong.sdk.PaymentResults.PAYRESULT_FAIL_NET`.

@@ -59,6 +59,8 @@ The card information will be persistent. So next time you use this provider, the
 
 开发者ID、密钥统一放在`tv.xiaocong.sdk.demo.Keys`。可以替换为您的正式账户和密钥。
 
+> 风险警示：实际项目中，密钥不建议以明文形式放在Java源代码或配置文件中。建议放在服务器上，并通过加密通信获取。至少，应该编译到so库中，增加破解难度。
+
 支付的进入点是`PaymentHelper.startMe`：
 
 ```java
@@ -111,6 +113,7 @@ The card information will be persistent. So next time you use this provider, the
 - `CREATE_ORDER_FAIL`: 不能在小葱支付系统内创建定单。
 - `DUPLICATE_ORDER_NO`：订单号重复。如果遇到这个错误，请检查你的订单号生成逻辑，可能有BUG。
 - `PAYRESULT_PENDING`: 支付结果不确定。请等待服务器回调。
+- `PAYRESULT_FAIL_NET`：网络错误，网络未连接或中断
 
 ## 服务器回调
 

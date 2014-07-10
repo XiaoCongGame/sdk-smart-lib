@@ -3,7 +3,7 @@
 
     <item android:drawable="@drawable/payway_ali_focus" android:state_focused="true"/>
     <item android:drawable="@drawable/payway_ali_focus" android:state_selected="true"></item>
-    <item android:drawable="@drawable/payway_ali_hover" android:state_hovered="true"/>
+    <!-- <item android:drawable="@drawable/payway_ali_hover" android:state_hovered="true"/> -->
     <item android:drawable="@drawable/payway_ali_default"/>
 
 </selector>

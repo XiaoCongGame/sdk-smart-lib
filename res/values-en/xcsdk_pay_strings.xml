@@ -80,6 +80,7 @@
     <string name="xcsdk_add_creditcard">Add a card</string>
     <string name="xcsdk_request_pp">Sending the order&#8230;</string>
     <string name="xcsdk_pay_fail_recover">Failed to pay.\nPlease try later or choose other payments.</string>
+    <string name="xcsdk_pay_fail_network_recover">Network Failure. Please check your network.</string>
     <string name="xcsdk_xiaocong_account_lack">Your account don\'t have enough coins.</string>
     <string name="xcsdk_paying">Paying&#8230;</string>
     <string name="xcsdk_pay_xclogin">Change your account</string>
