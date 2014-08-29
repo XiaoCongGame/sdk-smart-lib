@@ -78,11 +78,14 @@
     <string name="xcsdk_remove_creditcard">Remove the card</string>
     <string name="xcsdk_modify_creditcard">Modify the card</string>
     <string name="xcsdk_add_creditcard">Add a card</string>
-    <string name="xcsdk_request_pp">Sending the order&#8230;</string>
+    <string name="xcsdk_request_pp">Connecting PP Payment</string>
     <string name="xcsdk_pay_fail_recover">Failed to pay.\nPlease try later or choose other payments.</string>
     <string name="xcsdk_pay_fail_network_recover">Network Failure. Please check your network.</string>
     <string name="xcsdk_xiaocong_account_lack">Your account don\'t have enough coins.</string>
     <string name="xcsdk_paying">Paying&#8230;</string>
+    <string name="xcsdk_paying_ali">Connecting Alipay</string>
+    <string name="xcsdk_paying_360">Connecting 360 Payment</string>
+    <string name="xcsdk_paying_sheng">Connecting Shenpay</string>
     <string name="xcsdk_pay_xclogin">Change your account</string>
     <string name="xcsdk_pay_xccoin_show">Cost %1$d Xiaocong Coins</string>
     <string name="xcsdk_pay_balance_unknown">Account Balance: Unknown</string>
