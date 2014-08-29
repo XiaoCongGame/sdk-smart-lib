@@ -2,36 +2,32 @@
 
 [toc]
 
-<a name="appply_for_account" ></a>
 ## 开发者账户
 
-与小葱支付服务器交互，需要使用MD5或RSA加密数据。为此，需要申请开发者标识（`partnerId`）和MD5、RSA密钥。
-
-当使用小葱币支付时，需要用户使用小葱 *OAuth 2* 登录。使用OAuth2需要申请`client_id`/`client_secret`。
+请先申请AppId和AppKey。
 
 ## 如何运行DEMO
 
-SDK 以 Android Library 工程的形式提供。下载地址：https://github.com/XiaoCongGame/sdk-smart-lib
+参见[快速入手](quick-start.md)。
 
-Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo
+SDK 以 Android Library 工程的形式提供。
+
+[SDK下载](https://github.com/XiaoCongGame/sdk-smart-lib)
+
+[Demo下载](https://github.com/XiaoCongGame/sdk-smart-demo)
 
 将两个工程下载后，导入Eclipse。配置Demo工程依赖SDK工程。运行Demo工程即可。
 
 ## 可用的支付方式
 
-目前我们支持以下支付方式：
-
-- 小葱币
-- 支付宝
-- 易宝
-- PP（信用）支付
-- 360币
+可用的支付方式是服务端控制的，可以改变，由双方公司商务协商确定。目前可用的支付方式包括：小葱币、支付宝快捷支付、易宝信用卡支付、盛付通支付、360支付。
 
 ![](img/payways.png)
 
 ### 小葱币
 
 下面是小葱币的支付界面。界面将显示本次需要支付的小葱币数量，当前账户余额与账户ID。用户可以选择更换支付账户——如果——例如，当前账户余额不足。
+
 ![](img/xc_xiaocong_coins.png)
 
 如果检测到用户已登录，且登录未过期，则将直接使用存在的账户。否则，在此界面可能弹出登录对话框：
@@ -41,69 +37,19 @@ Demo工程下载：https://github.com/XiaoCongGame/sdk-smart-demo
 
 ![](img/xiaocong-coins-change-account.png)
 
-如果你不想让用户切换账户，例如，你向让用户用已登录过的小葱账户支付，则你需要传给我们之前登录时获得的accessToken。
-
-### Yeepay
-
-If the user use this provider first time, a screen that collects all information for payment will show up as following:
-
-![](img/yeepay_input_cards.png)
-
-The card information will be persistent. So next time you use this provider, there're be a list of cards from which you could select one, instead of typing again.
-
-![](img/yeepay_list.png)
+如果你不想让用户切换账户，例如，你向让用户用已登录过的小葱账户支付，则你需要传给我们之前登录时获得的`accessToken`。
 
 ## 使用SDK
 
-请参见Demo工程的代码。
+强烈建议阅读理解Demo的代码后再进行接入。Demo非常简短明了。Demo配置好后可直接运行。
 
-开发者ID、密钥统一放在`tv.xiaocong.sdk.demo.Keys`。可以替换为您的正式账户和密钥。
+AppId/AppKey、应用包名、回调地址配置在`tv.xiaocong.sdk.demo.Keys`。正式上线前请替换成正式的内容。
 
 > 风险警示：实际项目中，密钥不建议以明文形式放在Java源代码或配置文件中。建议放在服务器上，并通过加密通信获取。至少，应该编译到so库中，增加破解难度。
 
-支付的进入点是`PaymentHelper.startMe`：
+## 支付的客户端回调
 
-```java
-    /**
-     * Execute payment.
-     * 
-     * @param caller
-     *            (Required) the activity that starts {@link PaymentStartActivity}.
-     * @param partnerId
-     *            (Required)
-     * @param amount
-     *            (Required) the money to pay. The unit is RMB cent. (1 Xiaocong coin == 1 RMB
-     *            cent.)
-     * @param signType
-     *            (Required) md5 or RSA
-     * @param orderNo
-     *            (Required) the order number in your system. Should be unique for all your request.
-     *            Prefixed by your partnerId. Format: ^{12,30}$.
-     * @param pkgname
-     *            (Required) the package name of you application
-     * @param goodsDes
-     *            (Required) some descriptions about your goods
-     * @param signature
-     *            (Required) the request signature. For the format of the signature, refer to
-     *            {@link MainActivity#getSign(int, int, String, String, String)}.
-     * @param notifyUrl
-     *            (Required) the callback URL in your server.
-     * @param remark
-     *            (Optional) some remark for this order
-     * @param accessToken
-     *            (Optional) If you don't want users to change their account, provide a accessToken
-     *            yourself; If you pass null, then we'll pop up login dialog to get the accessToken
-     *            if necessary.
-     */
-    public static void pay(Activity caller, int partnerId, int amount, String signType,
-            String orderNo, String pkgname, String goodsDes, String signature, String notifyUrl,
-            String remark, String accessToken) {
-        PaymentHelper.startMe(caller, partnerId, amount, signType, orderNo, pkgname, goodsDes,
-                signature, notifyUrl, remark, Keys.CLIENT_ID, Keys.CLIENT_SECRET, accessToken);
-    }
-```
-
-所有可能的支付结果列在`com.xiaocong.sdk.PaymentResults`。
+支付完成后界面会接收到回调（参见Demo代码）。所有可能的支付结果列在`com.xiaocong.sdk.PaymentResults`。
 
 - `ILLEGAL_PARAMETER`: Your request(ie. calling `pay`) is invalid.
 - `NO_PAY_WAY`: 没有可用的支付方式。请联系商务人员检查签约时约定的支付方式。
@@ -115,12 +61,11 @@ The card information will be persistent. So next time you use this provider, the
 - `PAYRESULT_PENDING`: 支付结果不确定。请等待服务器回调。
 - `PAYRESULT_FAIL_NET`：网络错误，网络未连接或中断
 
-## 服务器回调
+## 支付的服务器回调
 
 最终您的游戏服务器会收到我们的回调。回调以POST发出。参数在HTTP Body中。格式编码为`x-www-form-urlencoded`。携带以下参数：
-```
-orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
-```
+
+	orderNo=2013041510251288&amount=10&account=13218181&notifyTime=12365212352&goodsDes=sword&status=1&sign=ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdq PgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk&mark=testcontent
 
 参数解释：
 
