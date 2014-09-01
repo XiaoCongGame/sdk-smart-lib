@@ -19,6 +19,8 @@ For more documents, you could inspect the `doc` directory in the SDK.
 
 ## Also See
 
+[For Unity developer](https://github.com/XiaoCongGame/sdk-unity-demo)
+
 [The SDK Demo](https://github.com/XiaoCongGame/sdk-smart-demo)
 
 [Server Demo](https://github.com/XiaoCongGame/xcPay_notify_demo)
