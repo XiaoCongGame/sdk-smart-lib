@@ -27,6 +27,7 @@
     <string name="xcsdk_login_logining">正在登录请稍后&#8230;</string>
     <string name="xcsdk_login_error">登录失败：网络异常或服务不可用！</string>
     <string name="xcsdk_login_fail">登录失败：用户名或密码错误！</string>
+    <string name="xcsdk_check_token">检查登录状态</string>
     
     <!-- 广告 -->
     <string name="xcsdk_splash_title">猜你喜欢</string>

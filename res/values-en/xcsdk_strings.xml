@@ -27,7 +27,7 @@
     <string name="xcsdk_login_logining">Signing in&#8230;</string>
     <string name="xcsdk_login_error">Failed! Network/Service failure!</string>
     <string name="xcsdk_login_fail">Illegal username/password!</string>
-    
+    <string name="xcsdk_check_token">Check authentication</string>
     <!-- 广告 -->
     <string name="xcsdk_splash_title">RECOMMENDATION</string>
     <string name="xcsdk_click_view">View</string>
