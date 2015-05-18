@@ -15,7 +15,7 @@
             android:id="@+id/xcsdk_register_username"
             style="@style/EditView.Dialog"
             android:hint="@string/xcsdk_register_username"
-            android:inputType="phone"
+            android:inputType="number"
             android:singleLine="true" />
 
         <Button
