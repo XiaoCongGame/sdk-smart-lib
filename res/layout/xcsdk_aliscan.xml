@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/pay_title"
+        style="@style/PayTip"
+        android:text="@string/xcsdk_alipay_scan_qrcode" />
+
+    <LinearLayout
+        android:id="@+id/ali_pay_scan_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/xcsdk_ali_scan_magin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ali_pay_img"
+            android:layout_width="@dimen/xcsdk_ali_scan_show_w"
+            android:layout_height="@dimen/xcsdk_ali_scan_show_h"
+            android:background="@drawable/ali_pay_img" />
+
+        <ImageView
+            android:id="@+id/ali_arrow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xcsdk_ali_scan_magin"
+            android:layout_marginRight="@dimen/xcsdk_ali_scan_magin"
+            android:background="@drawable/ali_arrow_img" />
+
+        <LinearLayout
+            android:id="@+id/qr_info_layout"
+            android:layout_width="@dimen/xcsdk_ali_scan_qrcode_bg_w"
+            android:layout_height="@dimen/xcsdk_ali_scan_qrcode_bg_h"
+            android:background="@drawable/qr_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ali_qr_img"
+                android:layout_width="@dimen/xcsdk_ali_scan_qrcode_w"
+                android:layout_height="@dimen/xcsdk_ali_scan_qrcode_h"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/qr_nofity_msg"
+        style="@style/PayTip"
+        android:singleLine="true"
+        android:textSize="@dimen/pay_qr_text_size"
+        android:text="@string/xcsdk_alipay_scan_qrcode_notify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tv_notify_margin_top_size"
+        android:layout_below="@+id/ali_pay_scan_space"
+         />
+
+</RelativeLayout>

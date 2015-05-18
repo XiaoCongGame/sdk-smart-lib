@@ -45,5 +45,16 @@
     <dimen name="xcsdk_dialog_title_text">15sp</dimen>
     <dimen name="xcsdk_focus_stroke_width">2dp</dimen>
     <dimen name="login_dialog_signup_top_margin">10dp</dimen>
+    <!-- ali scan qrcode -->
+    <dimen name="xcsdk_ali_scan_show_w">280dp</dimen>
+    <dimen name="xcsdk_ali_scan_show_h">430dp</dimen>
+    <dimen name="xcsdk_ali_scan_magin">135dp</dimen>
+    <dimen name="xcsdk_ali_scan_magin_top">105dp</dimen>
+    <dimen name="xcsdk_ali_scan_qrcode_bg_w">303dp</dimen>
+    <dimen name="xcsdk_ali_scan_qrcode_bg_h">303dp</dimen>
+    <dimen name="xcsdk_ali_scan_qrcode_w">285dp</dimen>
+    <dimen name="xcsdk_ali_scan_qrcode_h">285dp</dimen>
+    <dimen name="pay_qr_text_size">20sp</dimen>
+    <dimen name="tv_notify_margin_top_size">20dp</dimen>
 
 </resources>

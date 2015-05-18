@@ -99,5 +99,7 @@
     <string name="xcsdk_yeepay_security_content">信用卡支付有一定的安全风险，请谨慎使用</string>
     <string name="xcsdk_yeepay_security_go">继续支付</string>
     <string name="xcsdk_yeepay_security_back">返回</string>
+    <string name="xcsdk_alipay_scan_qrcode">支付宝扫码支付</string>
+    <string name="xcsdk_alipay_scan_qrcode_notify">( 支付完成,若页面未自动关闭,请按"返回"手动关闭 )</string>
 
 </resources>
