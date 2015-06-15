@@ -99,5 +99,8 @@
     <string name="xcsdk_yeepay_security_content">Warning: please use this payment way only in a secure place!</string>
     <string name="xcsdk_yeepay_security_go">Continue</string>
     <string name="xcsdk_yeepay_security_back">Return</string>
+    <string name="xcsdk_alipay_scan_qrcode">Ali scan code payment</string>
+    <string name="xcsdk_alipay_scan_qrcode_notify">If the page is not automatically closed after the payment is completed,\nplease press \"return\" key to close this page.</string>
+    <string name="xcsdk_weixin_scan_qrcode">WeChat scan code payment</string>
 
 </resources>

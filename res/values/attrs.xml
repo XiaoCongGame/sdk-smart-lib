@@ -2,8 +2,8 @@
 <resources>
 
     <declare-styleable name="aspectimage">
-        <attr name="width" format="integer" />
-        <attr name="height" format="integer" />
+        <attr name="xcwidth" format="integer" />
+        <attr name="xcheight" format="integer" />
     </declare-styleable>
 
 </resources>

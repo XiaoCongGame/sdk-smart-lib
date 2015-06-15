@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scaleType="centerInside"
-    custom:height="310"
-    custom:width="510"
+    custom:xcheight="310"
+    custom:xcwidth="510"
     tools:ignore="ContentDescription" />
